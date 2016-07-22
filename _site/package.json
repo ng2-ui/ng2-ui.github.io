@@ -1,0 +1,20 @@
+{
+  "name": "ng2-ui.github.io",
+  "version": "0.1.0",
+  "description": "Ng2 UI Web Page",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "start": "bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ng2-ui/ng2-ui.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ng2-ui/ng2-ui.github.io/issues"
+  },
+  "homepage": "https://github.com/ng2-ui/ng2-ui.github.io#readme"
+}
