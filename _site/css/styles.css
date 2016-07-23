@@ -1,149 +1,149 @@
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
+  height: 100%;
+  background: #f5f5f5;
 }
-.demo-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
+ul, li {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
-.demo-layout .demo-header .mdl-textfield {
-  padding-top: 27px;
-}
-.demo-layout .mdl-layout__header .mdl-layout__drawer-button {
-  color: rgba(0, 0, 0, 0.54);
-}
-.mdl-layout__drawer .avatar {
-  margin-bottom: 16px;
-}
-.demo-drawer {
+
+/**
+ * drawer
+ */
+.drawer {
+  background: #37474F;
   border: none;
-}
-/* iOS Safari specific workaround */
-.demo-drawer .mdl-menu__container {
-  z-index: -1;
-}
-.demo-drawer .demo-navigation {
-  z-index: -2;
-}
-/* END iOS Safari specific workaround */
-.demo-drawer .mdl-menu .mdl-menu__item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.demo-drawer-header {
   box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  width: 240px;
+  overflow-y: auto;
+  padding: 16px 0px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.drawer > * {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+}
+.drawer .logo {
+  align-items: center;
   padding: 16px;
-  height: 151px;
 }
-.demo-avatar-dropdown {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.drawer .logo img {
+  width: 128px;
+  border-radius: 10px;
+}
+.drawer a {
+  text-decoration: none;
+  color: rgba(236, 239, 241, 0.5);
+  padding: 16px 20px;
   display: flex;
-  position: relative;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+  align-items: center;
+}
+.drawer a:hover {
+  color: #fff;
 }
 
-.demo-navigation {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.drawer li a:hover {
+  background: #07ACC1;
 }
-.demo-layout .demo-navigation .mdl-navigation__link {
-  display: -webkit-box !important;
-  display: -webkit-flex !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: rgba(255, 255, 255, 0.56);
-  font-weight: 500;
-}
-.demo-layout .demo-navigation .mdl-navigation__link:hover {
-  background-color: #00BCD4;
-  color: #37474F;
-}
-.demo-navigation .mdl-navigation__link .material-icons {
+.drawer .material-icons {
+  margin-right: 22px;
   font-size: 24px;
-  color: rgba(255, 255, 255, 0.56);
-  margin-right: 32px;
+  background: #EF3C79;
+  border-radius: 50%;
+  padding: 10px;
+  vertical-align: middle;
+}
+.drawer li a:hover .material-icons {
+  background: rgba(239, 60, 121, 0.6);
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .drawer {
+    position: fixed;
+    height: 64px;
+    padding: 0;
+    top: 0;
+    display: flex;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .drawer .logo {
+    padding: 4px;
+  }
+  .drawer .logo img {
+    width: 56px;
+  }
+  .drawer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .drawer a {
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  .drawer .material-icons {
+    margin: 0;
+    background: transparent;
+    border-radius: 0;
+    padding: 5px;
+    text-align: center;
+  }
+  .drawer li a:hover .material-icons {
+    background: none;
+    color: #fff;
+  }
 }
 
-.demo-content {
+/**
+ * main
+ */
+main {
+  margin: 0px 0 0 240px;
+  width: calc(100% - 240px);
+  max-width: 1024px;
+}
+@media screen and (max-width: 1024px) {
+  main {
+    display: block !important;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 122px;
+  }
+}
+
+.content {
   max-width: 1080px;
 }
 
-.demo-charts {
+.charts {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.demo-chart:nth-child(1) {
+.chart:nth-child(1) {
   color: #ACEC00;
 }
-.demo-chart:nth-child(2) {
+.chart:nth-child(2) {
   color: #00BBD6;
 }
-.demo-chart:nth-child(3) {
+.chart:nth-child(3) {
   color: #BA65C9;
 }
-.demo-chart:nth-child(4) {
+.chart:nth-child(4) {
   color: #EF3C79;
 }
-.demo-graphs {
+.graphs {
   padding: 16px 32px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -163,21 +163,21 @@ html, body {
  * not float around outside their container in IE10/11.
  * Using a browserhacks.com solution for now.
  */
-_:-ms-input-placeholder, :root .demo-graphs {
+_:-ms-input-placeholder, :root .graphs {
   min-height: 664px;
 }
-_:-ms-input-placeholder, :root .demo-graph {
+_:-ms-input-placeholder, :root .graph {
   max-height: 300px;
 }
 /* TODO end */
-.demo-graph:nth-child(1) {
+.graph:nth-child(1) {
   color: #00b9d8;
 }
-.demo-graph:nth-child(2) {
+.graph:nth-child(2) {
   color: #d9006e;
 }
 
-.demo-cards {
+.cards {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
@@ -186,48 +186,48 @@ _:-ms-input-placeholder, :root .demo-graph {
       -ms-flex-line-pack: start;
           align-content: flex-start;
 }
-.demo-cards .demo-separator {
+.cards .separator {
   height: 32px;
 }
-.demo-cards .mdl-card__title.mdl-card__title {
+.cards .mdl-card__title.mdl-card__title {
   color: white;
   font-size: 24px;
   font-weight: 400;
 }
-.demo-cards ul {
+.cards ul {
   padding: 0;
 }
-.demo-cards h3 {
+.cards h3 {
   font-size: 1em;
 }
-.demo-updates .mdl-card__title {
+.updates .mdl-card__title {
   min-height: 200px;
-  background-image: url('images/dog.png');
+  background-image: url('/images/dog.png');
   background-position: 90% 100%;
   background-repeat: no-repeat;
 }
-.demo-cards .mdl-card__actions a {
+.cards .mdl-card__actions a {
   color: #00BCD4;
   text-decoration: none;
 }
 
-.demo-options h3 {
+.options h3 {
   margin: 0;
 }
-.demo-options .mdl-checkbox__box-outline {
+.options .mdl-checkbox__box-outline {
   border-color: rgba(255, 255, 255, 0.89);
 }
-.demo-options ul {
+.options ul {
   margin: 0;
   list-style-type: none;
 }
-.demo-options li {
+.options li {
   margin: 4px 0;
 }
-.demo-options .material-icons {
+.options .material-icons {
   color: rgba(255, 255, 255, 0.89);
 }
-.demo-options .mdl-card__actions {
+.options .mdl-card__actions {
   height: 64px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -239,3 +239,4 @@ _:-ms-input-placeholder, :root .demo-graph {
       -ms-flex-align: center;
           align-items: center;
 }
+
