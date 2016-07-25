@@ -12,7 +12,6 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
       <a routerLink="/getting-started">Getting Started</a>
       <a href="javascript:void(0)"><span>Components</span></a>
       <ul>
-        <li><a routerLink="/accordion"><i class="material-icons">mouse</i>Accordion </a>
         <li><a routerLink="/auto-complete"><i class="material-icons">mouse</i>Auto Complete</a>
         <li><a routerLink="/datetime-picker"><i class="material-icons">mouse</i>Datetime Picker</a>
         <li><a routerLink="/google-map"><i class="material-icons">mouse</i>Google Map</a>
@@ -22,8 +21,9 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
         <li><a routerLink="/popup"><i class="material-icons">mouse</i>Popup</a>
         <li><a routerLink="/scrollable"><i class="material-icons">mouse</i>Scrollable</a>
         <li><a routerLink="/sticky"><i class="material-icons">mouse</i>Sticky Section</a>
-        <li><a routerLink="/tab"><i class="material-icons">mouse</i>Tab</a>
         <li><a routerLink="/tooltip"><i class="material-icons">mouse</i>Tooltip</a>
+        <li><a routerLink="/tab"><i class="material-icons">mouse</i>Tab</a>
+        <li><a routerLink="/accordion"><i class="material-icons">mouse</i>Accordion </a>
       </ul>
       <a href="/help">Help</a>
     </ul>

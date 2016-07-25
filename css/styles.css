@@ -10,6 +10,8 @@ ul, li {
   padding: 0;
 }
 
+* {box-sizing: border-box}
+
 /**
  * drawer
  */
@@ -112,16 +114,50 @@ main {
   margin: 0px 0 0 240px;
   width: calc(100% - 240px);
   max-width: 1024px;
+  padding: 12px;
 }
 main .title {
   padding: 12px 48px;
+}
+main .main-contents {
+  width: 75%;
+  float: left;
+}
+main .repo-info {
+  width: calc(25% - 12px);
+  float: left;
+}
+main .repo-info .container {
+  width: 100%;
 }
 @media screen and (max-width: 1024px) {
   main {
     display: block !important;
     width: 100%;
     margin: 0 auto;
-    margin-top: 122px;
+    margin-top: 64px;
+  }
+}
+@media screen and (min-width: 840px) {
+  main .spacer {
+    float: left;
+  }
+}
+@media screen and (max-width: 840px) {
+  main .main-contents {
+    width: 100%;
+    float: none;
+  }
+  main .repo-info {
+    width: 100%;
+    float: none;
+  }
+  main .repo-info .spacer {
+    float: left;
+  }
+  main .repo-info .container {
+    width: calc(50% - 6px);
+    float: left;
   }
 }
 
@@ -129,11 +165,6 @@ main .title {
   max-width: 1080px;
 }
 
-@media screen and (min-width: 840px) {
-  .right-side-bar {
-    align-content: flex-start;
-  }
-}
 /**
  * common classes
  */
@@ -145,6 +176,16 @@ main .title {
   padding: 12px;
 }
 
+.spacer {
+  height: 12px;
+  width: 12px;
+}
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 
 
 

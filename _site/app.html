@@ -1,20 +1,16 @@
 <drawer-component class="drawer mdl-shadow--2dp"></drawer-component>
-<main class="mdl-layout__content">
-  <div class="mdl-grid ">
-
-    <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--9-col">
-      <router-outlet></router-outlet>
+<main class="clearfix">
+  <div class="main-contents mdl-card mdl-shadow--2dp">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="spacer"></div>
+  <div class="repo-info ">
+    <div class="first container mdl-card mdl-shadow--2dp">
+      Right-Side Top
     </div>
-
-    <div class="right-side-bar mdl-cell mdl-cell--3-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-      <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-        Right-Side Top
-      </div>
-      <div class="mdl-cell--1-col"><br/></div>
-      <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--12-col-desktop">
-        Right-Side Bottom
-      </div>
+    <div class="spacer"></div>
+    <div class="second container mdl-card mdl-shadow--2dp">
+      Right-Side Bottom
     </div>
-
   </div>
 </main>
