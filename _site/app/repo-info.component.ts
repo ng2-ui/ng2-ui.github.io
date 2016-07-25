@@ -7,14 +7,22 @@ import {Observable} from "rxjs";
   selector: 'repo-info',
   template: `
     <div class="first container mdl-card mdl-shadow--2dp">
-      <h5>Repository Status</h5>  
-      <p>stargazers_count: 3
-      <p>watchers: 3
-      <p>open_issues: 1
+      <h5>Status</h5>  
+      <div *ngIf="currentRepo">
+        <p>stargazers: {{currentRepo.stargazers_count}}
+        <p>watchers: {{currentRepo.watchers}}
+        <p>open_issues: {{currentRepo.open_issues}}
+      </div>
     </div>
     <div class="spacer"></div>
     <div class="second container mdl-card mdl-shadow--2dp">
-      Contributors: 
+      <h5>Contributors</h5> 
+      <ul>
+        <li *ngFor="let user of contributors">
+          <img src="{{user.avatar_url}}" height="64" />
+          {{user.contributions}} {{user.login}}
+        </li>
+      </ul>
     </div>
   `
 })
