@@ -112,6 +112,9 @@ main {
   width: calc(100% - 240px);
   max-width: 1024px;
 }
+main .title {
+  padding: 12px 48px;
+}
 @media screen and (max-width: 1024px) {
   main {
     display: block !important;
@@ -124,6 +127,40 @@ main {
 .content {
   max-width: 1080px;
 }
+
+@media screen and (min-width: 840px) {
+  .right-side-bar {
+    align-content: flex-start;
+  }
+}
+/**
+ * common classes
+ */
+.bg-sky {
+  background: linear-gradient(#0143A3,#0273D4);
+  color: #fff;
+}
+.container {
+  padding: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .charts {
   -webkit-box-align: center;
