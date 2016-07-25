@@ -124,6 +124,7 @@ main .main-contents {
   float: left;
 }
 main .repo-info {
+  display: block;
   width: calc(25% - 12px);
   float: left;
 }
