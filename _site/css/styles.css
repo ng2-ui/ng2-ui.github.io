@@ -14,6 +14,7 @@ ul, li {
  * drawer
  */
 .drawer {
+  display: block;
   background: #37474F;
   border: none;
   box-sizing: border-box;
