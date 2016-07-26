@@ -1,4 +1,0 @@
-# Build settings
-markdown: kramdown
-excerpt_separator: <!--more-->
-exclude: [node_modules]
