@@ -10,6 +10,15 @@ ul, li {
   padding: 0;
 }
 
+pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
 * {box-sizing: border-box}
 
 /**
@@ -168,6 +177,14 @@ main .repo-info .container {
 
 .content {
   max-width: 1080px;
+}
+
+.contributor a {
+  display: inline-block;
+  padding: 10px;
+}
+.contributor img {
+  border-radius: 50%;
 }
 
 /**

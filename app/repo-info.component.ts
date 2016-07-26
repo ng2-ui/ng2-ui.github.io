@@ -3,24 +3,27 @@ import {Router, NavigationStart} from "@angular/router";
 import {Http, Response} from "@angular/http";
 import {Observable} from "rxjs";
 
+import {HttpCache} from './http-cache';
+
 @Component({
   selector: 'repo-info',
   template: `
     <div class="first container mdl-card mdl-shadow--2dp">
-      <h5>Status</h5>  
       <div *ngIf="currentRepo">
-        <p>stargazers: {{currentRepo.stargazers_count}}
-        <p>watchers: {{currentRepo.watchers}}
-        <p>open_issues: {{currentRepo.open_issues}}
+        <p><a href="{{currentRepo.html_url}}">View on Github</a>
+        <p><a href="{{currentRepo.html_url}}">stargazers: {{currentRepo.stargazers_count}}</a>
+        <p><a href="{{currentRepo.html_url}}/issues">open_issues: {{currentRepo.open_issues}}</a>
       </div>
     </div>
     <div class="spacer"></div>
     <div class="second container mdl-card mdl-shadow--2dp">
       <h5>Contributors</h5> 
       <ul>
-        <li *ngFor="let user of contributors">
-          <img src="{{user.avatar_url}}" height="64" />
-          {{user.contributions}} {{user.login}}
+        <li class="contributor" *ngFor="let user of contributors">
+          <a href="{{user.html_url}}">
+           <img src="{{user.avatar_url}}" height="64" /> <br/>
+           {{user.login}}
+          </a>
         </li>
       </ul>
     </div>
@@ -32,7 +35,7 @@ export class RepoInfoComponent {
   currentRepo: any;
   contributors: any;
 
-  constructor(private router: Router, private http: Http) {
+  constructor(private router: Router, private httpCache: HttpCache) {
     router.events.subscribe(event => {
       if(event instanceof NavigationStart) { //..End, ..Cancel, ..Error, etc
         this.currentUrl = event.url;
@@ -45,8 +48,7 @@ export class RepoInfoComponent {
   }
 
   ngOnInit() {
-    this.http.get('https://api.github.com/users/ng2-ui/repos')
-      .map(resp => resp.json())
+    this.httpCache.get('https://api.github.com/users/ng2-ui/repos')
       .subscribe(resp => {
         console.log('repositories', resp);
         this.repositories = <any>resp;
@@ -74,7 +76,7 @@ export class RepoInfoComponent {
   }
 
   getContributors(repoUrl: string): Observable<Response>{
-    return this.http.get(repoUrl + '/contributors').map(resp => resp.json());
+    return this.httpCache.get(repoUrl + '/contributors');
   }
 
   getCurrentRepoUrl() {
