@@ -129,7 +129,7 @@ main {
   max-width: 1024px;
   padding: 12px;
 }
-main .title {
+main > .title {
   padding: 12px 48px;
 }
 main .main-contents {
@@ -153,7 +153,7 @@ main .repo-info .container {
   }
 }
 @media screen and (min-width: 840px) {
-  main .spacer {
+  main > .spacer {
     float: left;
   }
 }
@@ -196,22 +196,35 @@ main .repo-info .container {
 }
 .container {
   padding: 12px;
+  position: relative;
+}
+.container > .title {
+  background-color: white;
+  display: inline-block;
+  padding: 0 10px;
+  width: auto;
+  position: absolute;
+  top: -10px;
+}
+
+.round-border {
+  border-radius: 2px;
+  border: 1px solid #ccc;
 }
 
 .spacer {
   height: 12px;
   width: 12px;
 }
+.spacer.x2 { height: 24px; width: 24px; }
+.spacer.x3 { height: 36px; width: 36px; }
+.spacer.x4 { height: 48px; width: 48px; }
 
 .clearfix:before, .clearfix:after {
   content: '';
   display: table;
   clear: both;
 }
-
-
-
-
 
 
 

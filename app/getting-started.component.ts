@@ -5,6 +5,10 @@ import { Component } from '@angular/core';
   <h1>Getting Started</h1>
 </div>
 <div class="container">
+  ng2-ui is a collection of quality Angular2 directives.
+  To make ng2-ui available to your project, you need to install a npm package and 
+  import NG2_DIRECTIVES.
+  
   <h4>NPM Inatall</h4>
   <pre><code class="language-bash">$ npm install ng2-ui --save</code></pre>
   
@@ -25,7 +29,7 @@ packages: {
       
   <h4>Usage</h4>
   <p><b>Import and include directives for your application</b>
-  <p>app.ts
+  <p>app.component.ts
   <pre><code class="language-javascript">
 //our root app component
 import {Component, enableProdMode} from '@angular/core'
@@ -37,9 +41,7 @@ enableProdMode();
   templateUrl: 'src/app.tpl.html',
   directives: [ NG2_DIRECTIVES ]    // <---- this
 })
-export class App {
-  arrayOfValues: any[] = ['a', 'b', 'c'];
-}
+export class AppComponent { ... }
 </code></pre>
 
 <p><b>src/app.tpl.html</b></p>

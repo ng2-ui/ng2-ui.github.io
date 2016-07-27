@@ -4,6 +4,7 @@ import { HTTP_PROVIDERS } from "@angular/http";
 import { DrawerComponent } from "./drawer.component";
 import { RepoInfoComponent } from "./repo-info.component";
 import { HttpCache } from './http-cache';
+import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
   selector: 'my-app',
@@ -11,6 +12,7 @@ import { HttpCache } from './http-cache';
   providers: [HTTP_PROVIDERS, HttpCache],
   directives: [
     ROUTER_DIRECTIVES,
+    NG2_DIRECTIVES,
     DrawerComponent,
     RepoInfoComponent
   ]
