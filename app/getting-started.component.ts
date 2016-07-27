@@ -53,5 +53,9 @@ export class AppComponent { ... }
 </div>
   `
 })
-export class GettingStartedComponent { }
+export class GettingStartedComponent {
+  ngAfterViewInit(): void {
+    window.scroll(0,0);
+  }
+}
 

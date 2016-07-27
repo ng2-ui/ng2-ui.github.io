@@ -103,4 +103,8 @@ export class AutoCompleteComponent {
   public model2;
   public model3;
   public model4;
+
+  ngAfterViewInit(): void {
+    window.scroll(0,0);
+  }
 }
