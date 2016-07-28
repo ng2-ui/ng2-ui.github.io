@@ -4,7 +4,7 @@ import { HTTP_PROVIDERS } from "@angular/http";
 import { DrawerComponent } from "./drawer.component";
 import { RepoInfoComponent } from "./repo-info.component";
 import { HttpCache } from './http-cache';
-import { NG2_DIRECTIVES } from 'ng2-ui';
+import { NG2_DIRECTIVES, Ng2MapComponent } from 'ng2-ui';
 
 @Component({
   selector: 'my-app',
@@ -18,5 +18,8 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
   ]
 })
 export class AppComponent {
+  constructor() {
+    Ng2MapComponent.apiUrl = "https://maps.google.com/maps/api/js?key=AIzaSyCbMGRUwcqKjlYX4h4-P6t-xcDryRYLmCM";
+  }
 }
 

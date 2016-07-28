@@ -88,21 +88,21 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
     </div>`
 })
 export class AutoCompleteComponent {
-  public arrayOfStrings: string[] =
+  arrayOfStrings: string[] =
     ["this", "is", "array", "of", "text"];
 
-  public arrayOfKeyValues: any[] =
+  arrayOfKeyValues: any[] =
     [{id:1, value:'One'}, {id:2, value:'Two'}, {id:3, value:'Three'}, {id:4, value:'Four'}];
 
-  public arrayOfKeyValues2: any[] =
+  arrayOfKeyValues2: any[] =
     [{key:1, name:'Key One'}, {key:2, name:'Key Two'}, {key:3, name:'Key Three'}, {key:4, name:'Key Four'}];
 
-  public googleGeoCode: string = "https://maps.googleapis.com/maps/api/geocode/json?address=:keyword";
+  googleGeoCode: string = "https://maps.googleapis.com/maps/api/geocode/json?address=:keyword";
 
-  public model1;
-  public model2;
-  public model3;
-  public model4;
+  model1: any;
+  model2: any;
+  model3: any;
+  model4: any;
 
   ngAfterViewInit(): void {
     window.scroll(0,0);

@@ -226,6 +226,17 @@ main .repo-info .container {
   clear: both;
 }
 
+.tabs .tab {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.tabs .tab.selected {
+  padding-top: 0;
+  border-top: 5px solid #00BCD4;
+}
 
 
 

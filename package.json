@@ -4,7 +4,7 @@
   "description": "Ng2 UI Web Page",
   "main": "index.html",
   "devDependencies": {
-    "ng2-ui": "^0.5.1",
+    "ng2-ui": "^0.5.5",
     "typescript": "^1.8.10",
     "typings": "^1.0.4"
   },
