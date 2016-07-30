@@ -22,7 +22,13 @@ import {HttpCache} from './http-cache';
         <li class="contributor" *ngFor="let user of contributors">
           <a href="{{user.html_url}}">
            <img src="{{user.avatar_url}}" height="64" /> <br/>
-           {{user.login}}
+           <div class="name">{{user.login}}</div>
+          </a>
+        </li>
+        <li class="contributor">
+          <a href="{{currentRepo.html_url}}">
+           <div class="you">You</div><br/>
+           <div class="name">Your Name</div>
           </a>
         </li>
       </ul>

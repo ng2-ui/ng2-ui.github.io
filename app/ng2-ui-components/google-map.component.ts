@@ -154,7 +154,7 @@ class AppCompoment {
     </div>`
 })
 export class GoogleMapComponent {
-  positions=[];
+  positions: any[] =[];
   tab1: number = 1;
   tab2: number = 1;
   tab3: number = 1;
@@ -162,7 +162,7 @@ export class GoogleMapComponent {
   ngAfterViewInit(): void {
     window.scroll(0,0);
   }
-  clicked(marker) {
+  clicked(marker: any): void {
     marker.map.mapComponent.openInfoWindow('iw', marker, {
       lat: marker.getPosition().lat(), lng: marker.getPosition().lng()
     })

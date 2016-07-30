@@ -179,14 +179,26 @@ main .repo-info .container {
   max-width: 1080px;
 }
 
-.contributor a {
+.contributor {
   display: inline-block;
   padding: 10px;
+}
+.contributor a {
+  text-decoration: none;
 }
 .contributor img {
   border-radius: 50%;
 }
-
+.you {
+  display: inline-block;
+  background: #ccc;
+  color: #fff;
+  width: 64px;
+  line-height: 64px;
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+}
 /**
  * common classes
  */
