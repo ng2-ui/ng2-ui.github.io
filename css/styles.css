@@ -11,10 +11,10 @@ ul, li {
 }
 
 pre {
+  margin: 0;
   padding: 16px;
   overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
+  font-size: 75%;
   background-color: #f7f7f7;
   border-radius: 3px;
 }
@@ -199,6 +199,10 @@ main .repo-info .container {
   font-size: 1.5em;
   border-radius: 50%;
 }
+.you ~ .name {
+  color: #999
+}
+
 /**
  * common classes
  */
@@ -238,16 +242,27 @@ main .repo-info .container {
   clear: both;
 }
 
+.tabs {
+  position: relative;
+  top: 1px;
+  background: transparent;
+  display: block;
+}
 .tabs .tab {
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #999;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 2px 2px 0 0;
 }
-
 .tabs .tab.selected {
   padding-top: 0;
+  background: #f7f7f7;
   border-top: 5px solid #00BCD4;
+  border-bottom: 1px solid transparent;
+}
+.tab-contents {
+  border: 1px solid #999;
+  border-radius: 2px;
 }
 
 
