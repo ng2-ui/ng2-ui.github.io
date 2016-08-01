@@ -20,6 +20,7 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
         <li><a routerLink="/accordion"><i class="material-icons">mouse</i>Accordion </a>
         <!--<li><a routerLink="/overlay"><i class="material-icons">mouse</i>Overlay</a>-->
         <li><a routerLink="/tooltip"><i class="material-icons">mouse</i>Tooltip</a>
+        <li><a routerLink="/menu"><i class="material-icons">mouse</i>Menu</a>
         <li><a routerLink="/parallax"><i class="material-icons">mouse</i>Parallax Scroll</a>
         <li><a routerLink="/popup"><i class="material-icons">mouse</i>Popup</a>
         <li><a routerLink="/scrollable"><i class="material-icons">mouse</i>Scrollable</a>

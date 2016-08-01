@@ -235,6 +235,10 @@ main .repo-info .container {
 .spacer.x2 { height: 24px; width: 24px; }
 .spacer.x3 { height: 36px; width: 36px; }
 .spacer.x4 { height: 48px; width: 48px; }
+.spacer.x5 { height: 69px; width: 69px; }
+.spacer.x6 { height: 72px; width: 72px; }
+.spacer.x7 { height: 84px; width: 84px; }
+.spacer.x8 { height: 96px; width: 96px; }
 
 .clearfix:before, .clearfix:after {
   content: '';

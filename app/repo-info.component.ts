@@ -91,12 +91,14 @@ export class RepoInfoComponent {
       case '/datetime-picker': return 'https://api.github.com/repos/ng2-ui/ng2-datetime-picker';
       case '/google-map':      return 'https://api.github.com/repos/ng2-ui/ng2-map';
       case '/infinite-list':   return 'https://api.github.com/repos/ng2-ui/ng2-infinite-list';
-      case '/overlay':         return 'https://api.github.com/repos/ng2-ui/ng2-overlay';
+      case '/tab':             return 'https://api.github.com/repos/ng2-ui/ng2-tab';
+      case '/accordion':       return 'https://api.github.com/repos/ng2-ui/ng2-collapsable';
+      case '/tooltip':         return 'https://api.github.com/repos/ng2-ui/ng2-tooltip-overlay';
+      case '/menu':            return 'https://api.github.com/repos/ng2-ui/ng2-menu';
       case '/parallax-scroll': return 'https://api.github.com/repos/ng2-ui/ng2-parallax-scroll';
       case '/popup':           return 'https://api.github.com/repos/ng2-ui/ng2-popup';
       case '/scrollable':      return 'https://api.github.com/repos/ng2-ui/ng2-scrollable';
       case '/sticky':          return 'https://api.github.com/repos/ng2-ui/ng2-sticky';
-      case '/tooltip':         return 'https://api.github.com/repos/ng2-ui/ng2-tooltip-overlay';
       default: return 'https://api.github.com/repos/ng2-ui/ng2-ui';
     }
   }
