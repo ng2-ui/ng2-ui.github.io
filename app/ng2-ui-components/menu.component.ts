@@ -40,28 +40,6 @@ import { NG2_DIRECTIVES, NG2_PROVIDERS } from 'ng2-ui';
       
       <div class="spacer x8"></div>
       <div class="spacer x8"></div>
-      <div>
-        <ul class="horizontal-menu">
-          <li> Menu Item 1
-            <ul ng2-menu="top">
-              <li> Menu Item 1-1
-              <li> Menu Item 1-2 
-              <li> Menu Item 1-3
-            </ul>
-          <li> Menu Item 2
-            <ul ng2-menu="top">
-              <li> Menu Item 2-1 
-              <li> Menu Item 2-2
-              <li> Menu Item 2-3
-            </ul>
-          <li> Menu Item 3
-            <ul ng2-menu="top">
-              <li> Menu Item 3-1
-              <li> Menu Item 3-2
-              <li> Menu Item 3-3
-            </ul>
-        </ul>
-      </div>
       <ng2-tab>
         <div class="tabs">
            <div index="html">HTML</div>
