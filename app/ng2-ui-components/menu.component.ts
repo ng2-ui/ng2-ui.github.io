@@ -251,7 +251,6 @@ The same as the above. .... Omitted Intentionally
       <h4>Bottom-Side Menu</h4>
       
       <div class="spacer x8"></div>
-      <div class="spacer x8"></div>
       <div class="bottom-menu">
         <ul class="horizontal-menu">
           <li> Menu Item 1
