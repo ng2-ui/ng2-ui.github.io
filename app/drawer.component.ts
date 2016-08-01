@@ -18,12 +18,12 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
         <li><a routerLink="/infinite-list"><i class="material-icons">mouse</i>Infinite List</a>
         <li><a routerLink="/tab"><i class="material-icons">mouse</i>Tab</a>
         <li><a routerLink="/accordion"><i class="material-icons">mouse</i>Accordion </a>
-        <li><a routerLink="/overlay"><i class="material-icons">mouse</i>Overlay</a>
+        <!--<li><a routerLink="/overlay"><i class="material-icons">mouse</i>Overlay</a>-->
+        <li><a routerLink="/tooltip"><i class="material-icons">mouse</i>Tooltip</a>
         <li><a routerLink="/parallax"><i class="material-icons">mouse</i>Parallax Scroll</a>
         <li><a routerLink="/popup"><i class="material-icons">mouse</i>Popup</a>
         <li><a routerLink="/scrollable"><i class="material-icons">mouse</i>Scrollable</a>
         <li><a routerLink="/sticky"><i class="material-icons">mouse</i>Sticky Section</a>
-        <li><a routerLink="/tooltip"><i class="material-icons">mouse</i>Tooltip</a>
       </ul>
       <a href="/help">Help</a>
     </ul>
