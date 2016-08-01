@@ -18,7 +18,7 @@ import {HttpCache} from './http-cache';
     <div class="spacer"></div>
     <div class="second container mdl-card mdl-shadow--2dp">
       <h5>Contributors</h5> 
-      <ul>
+      <ul *ngIf="contributors">
         <li class="contributor" *ngFor="let user of contributors">
           <a href="{{user.html_url}}">
            <img src="{{user.avatar_url}}" height="64" /> <br/>
