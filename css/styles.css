@@ -9,6 +9,9 @@ ul, li {
   margin: 0;
   padding: 0;
 }
+input {
+  padding: 5px;
+}
 
 pre {
   margin: 0;
@@ -85,27 +88,38 @@ pre {
     height: 64px;
     padding: 0;
     top: 0;
-    display: flex;
+    display: block;
     overflow-y: hidden;
     white-space: nowrap;
     width: 100%;
     overflow-x: auto;
   }
+  .drawer > * {
+    display: inline-block;
+    flex-direction: inherit;
+  }
   .drawer .logo {
     padding: 4px;
+    align-items: inherit;
   }
   .drawer .logo img {
     width: 56px;
   }
   .drawer ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: inline-block;
+    flex-direction: inherit;
+    align-items: inherit;
+  }
+  .drawer ul li {
+    display: inline-block;
   }
   .drawer a {
     padding: 5px 15px;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    align-items: inherit;
+  }
+  .drawer a.components.header {
+    display: none;
   }
   .drawer .material-icons {
     margin: 0;
@@ -117,6 +131,9 @@ pre {
   .drawer li a:hover .material-icons {
     background: none;
     color: #fff;
+  }
+  input {
+    width: auto !important;
   }
 }
 

@@ -59,7 +59,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
     </div>`
 })
 export class DatetimePickerComponent {
-  date1 = new Date("01-01-2015 00:00:00");
+  date1 = new Date("2015-01-01");
   date2 = new Date("Thu Jan 01 2015 00:00:00 GMT-0500 (EST)");
   date3 = '2015-01-01T00:00:00-0400';
   date4 = '2015-01-01';

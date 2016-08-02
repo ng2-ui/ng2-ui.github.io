@@ -12,7 +12,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
       <div class="container round-border">
         <div class="title">Simple string of array as source</div>
         <pre>{{arrayOfStrings | json}}</pre >
-        <p><input ng2-auto-complete style="width: 400px" 
+        <p><input ng2-auto-complete
           [(ngModel)]="model1"
           [source]="arrayOfStrings"
           placeholder="enter text"/>
@@ -28,7 +28,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
       <div class="container round-border">
         <div class="title">Simple object of array as source</div>
         <pre>{{arrayOfKeyValues | json}}</pre> 
-        <p><input ng2-auto-complete style="width: 400px"
+        <p><input ng2-auto-complete
           [(ngModel)]="model2"
           [source]="arrayOfKeyValues" 
           placeholder="enter text"/> 
@@ -44,7 +44,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
       <div class="container round-border">
         <div class="title">Custom object of array as source</div>
         <pre>{{arrayOfKeyValues2 | json}}</pre>
-        <p><input ng2-auto-complete style="width: 400px"
+        <p><input ng2-auto-complete 
           [source]="arrayOfKeyValues2"
           [(ngModel)]="model3"
           placeholder="enter text"
@@ -65,7 +65,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
       <div class="container round-border">
         <div class="title">Google geocode API as source</div>
         <p><b>source:</b> {{googleGeoCode}}
-        <p><input ng2-auto-complete style="width: 400px"
+        <p><input ng2-auto-complete
           [(ngModel)]="model4"
           placeholder="Enter Address(min. 2 chars)"
           [source]="googleGeoCode" 

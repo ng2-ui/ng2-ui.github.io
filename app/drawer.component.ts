@@ -10,7 +10,7 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
     </div>
     <ul>
       <a routerLink="/getting-started">Getting Started</a>
-      <a href="javascript:void(0)"><span>Components</span></a>
+      <a class="components header" href="javascript:void(0)"><span>Components</span></a>
       <ul>
         <li><a routerLink="/auto-complete"><i class="material-icons">mouse</i>Auto Complete</a>
         <li><a routerLink="/datetime-picker"><i class="material-icons">mouse</i>Datetime Picker</a>
