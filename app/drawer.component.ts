@@ -26,7 +26,7 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
         <li><a routerLink="/scrollable"><i class="material-icons">mouse</i>Scrollable</a>
         <li><a routerLink="/sticky"><i class="material-icons">mouse</i>Sticky Section</a>
       </ul>
-      <a href="/help">Help</a>
+      <a href="https://github.com/ng2-ui/ng2-ui/issues">Help</a>
     </ul>
   `
 })
