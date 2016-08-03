@@ -8,7 +8,56 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
       <h1>Parallax Scroll</h1>
     </div>
     <div class="container">
-      Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/> Contents Coming Soon<br/>
+      <div style="height: 300px"> 
+        <p>
+          <b>Parallax scrolling</b> is a scrolling technique used computer graphics
+          in which background images move more slowly than images in the foreground, 
+          creating the illusion of depth and immersion.
+        </p>
+        <p>
+          scroll up/down and see how image changes.
+          To see the proper parallax effect, the container window
+          should be smaller than the image behind.
+        </p>
+      </div>
+      <div ng2-parallax style="height: 300px">
+        <img src="http://materializecss.com/images/parallax1.jpg" />
+      </div>
+      <ng2-tab>
+        <div class="tabs">
+           <div index="html">HTML</div>
+           <div index="js">Javascript</div>
+         </div> 
+         <div class="tab-contents">
+           <div contents="html">
+<pre><code class="language-markup"
+>&lt;div ng2-parallax style="height: 300px">
+  &lt;img src="http://materializecss.com/images/parallax1.jpg" />
+&lt;/div>
+</code></pre>
+          </div>
+          <div contents="js">
+<pre><code class="language-javascript"
+>import { Component } from '@angular/core';
+import { NG2_DIRECTIVES } from 'ng2-ui';
+
+@Component({
+  directives: [ NG2_DIRECTIVES ],
+  templateUr: 'app.html'
+})
+export class AppComponent{
+}</code></pre>
+          </div>
+         </div>
+      </ng2-tab>
+      <br/>
+      <br/>
+      <div ng2-parallax style="height: 300px">
+        <img src="http://materializecss.com/images/parallax2.jpg" />
+      </div>
+      <div style="height: 300px">
+         This space is intentionally added for scrolling
+      </div>
     </div>`
 })
 export class ParallaxScrollComponent {
