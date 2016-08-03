@@ -1,6 +1,6 @@
 {
   "name": "ng2-ui.github.io",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Ng2 UI Web Page",
   "main": "index.html",
   "devDependencies": {
