@@ -50,7 +50,7 @@ export class AppComponent{
   border: 1px solid #333;
   background-image: linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
   background-size: 50px 50px;
-  height: 1000px;
+  height: 300px;
 }
 .float-right {
   background-color: rgba(0,255,0, .2);
@@ -107,7 +107,7 @@ export class AppComponent{
   border: 1px solid #333;
   background-image: linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
   background-size: 50px 50px;
-  height: 1000px;
+  height: 300px;
 }
 .float-left {
   background-color: rgba(255,0,0, .2);
@@ -170,7 +170,7 @@ export class AppComponent{
   border: 1px solid #333;
   background-image: linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
   background-size: 50px 50px;
-  height: 1000px;
+  height: 300px;
 }
 .div-middle {
   background-color: rgba(0,0,255, .2);
@@ -191,6 +191,9 @@ div[ng2-sticky] {
          </div>
       </ng2-tab>
       <div class="spacer"></div>
+      <div style="height:300px">
+        This space is left-blank intentionally to see scroll effect
+      </div>
       
     </div>`,
   styles: [`
@@ -199,7 +202,7 @@ div[ng2-sticky] {
       border: 1px solid #333;
       background-image: linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
       background-size: 50px 50px;
-      height: 1000px;
+      height: 300px;
     }
     .float-left {
       background-color: rgba(255,0,0, .2);
