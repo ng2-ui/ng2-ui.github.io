@@ -1,5 +1,7 @@
-import { Component } from '@angular/core'
-import {ROUTER_DIRECTIVES, Router, NavigationEnd} from '@angular/router';
+import { Component } from '@angular/core';
+import { Location } from '@angular/common';
+import { ROUTER_DIRECTIVES, Router, NavigationEnd }  from '@angular/router';
+
 import { HTTP_PROVIDERS } from "@angular/http";
 import { DrawerComponent } from "./drawer.component";
 import { RepoInfoComponent } from "./repo-info.component";
@@ -9,7 +11,7 @@ import { NG2_DIRECTIVES, Ng2MapComponent } from 'ng2-ui';
 @Component({
   selector: 'my-app',
   templateUrl: './app.html',
-  providers: [HTTP_PROVIDERS, HttpCache],
+  providers: [HTTP_PROVIDERS,  HttpCache],
   directives: [
     ROUTER_DIRECTIVES,
     NG2_DIRECTIVES,
@@ -46,9 +48,9 @@ export class AppComponent {
 
     if (event instanceof NavigationEnd) {
       // When the route is '/', location.path actually returns ''.
-      let newRoute = this.location.pathname || '/';
+      let newRoute = this.location.path() || '/';
       if (this.currentRoute != newRoute) {
-        console.log('sending google analytics', 'send', 'pageview', newRoute);
+        //console.log('>>>>>>>>>>>>>>>>>>>> sending google analytics', 'send', 'pageview', newRoute);
         window['ga']('send', 'pageview', newRoute);
         this.currentRoute = newRoute;
       }
