@@ -9,10 +9,10 @@ import { Component } from '@angular/core';
   To make ng2-ui available to your project, you need to install a npm package and 
   import NG2_DIRECTIVES.
   
-  <h4>NPM Inatall</h4>
+  <h2>NPM Inatall</h2>
   <pre><code class="language-bash">$ npm install ng2-ui --save</code></pre>
   
-  <h4>systemjs.config.js</h4>
+  <h2>systemjs.config.js</h2>
   <pre><code class="language-javascript">
 map: {
   app: "app",
@@ -27,7 +27,7 @@ packages: {
    }
 }</code></pre>
       
-  <h4>Usage</h4>
+  <h2>Usage</h2>
   <p><b>Import and include directives for your application</b>
   <p>app.component.ts
   <pre><code class="language-javascript">

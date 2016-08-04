@@ -10,7 +10,7 @@ import { NG2_DIRECTIVES, NG2_PROVIDERS } from 'ng2-ui';
     </div>
     <div class="container">
     
-      <h4>Dropdown Menu</h4>
+      <h2>Dropdown Menu</h2>
       <div>
         <ul class="horizontal-menu">
           <li> Item 1
@@ -145,7 +145,7 @@ ul.horizontal-menu > li {
       </ng2-tab>
      
     
-      <h4>Right-Side Menu</h4>
+      <h2>Right-Side Menu</h2>
       
       <div class="right-side-menu">
         <ul ng2-menu="right">
@@ -226,7 +226,7 @@ The same as the above. .... Omitted Intentionally
       </ng2-tab>
       
       
-      <h4>Bottom-Side Menu</h4>
+      <h2>Bottom-Side Menu</h2>
       
       <div class="spacer x8"></div>
       <div class="bottom-menu">

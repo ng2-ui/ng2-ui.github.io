@@ -8,16 +8,28 @@ import {HttpCache} from './http-cache';
 @Component({
   selector: 'repo-info',
   template: `
-    <div class="first container mdl-card mdl-shadow--2dp">
-      <div *ngIf="currentRepo">
-        <p><a href="{{currentRepo.html_url}}">View on Github</a>
-        <p><a href="{{currentRepo.html_url}}">stargazers: {{currentRepo.stargazers_count}}</a>
+    <div class="first container shadow-1">
+      <div *ngIf="currentUrl && currentRepo">
+        <p>
+          <a href="{{currentRepo.html_url}}" class="button">
+            <span class="octicon octicon-mark-github"></span>
+            {{currentUrl.replace('/','')}} on Github
+          </a>
+        <p>
+          <a href="{{currentRepo.html_url}}" class="button">
+            <i class="material-icons">star</i> <span>Star</span>
+            <span class="counter">
+              <b></b>
+              <i></i>
+              <span>{{currentRepo.stargazers_count}}</span>
+            </span>
+          </a> 
         <p><a href="{{currentRepo.html_url}}/issues">open_issues: {{currentRepo.open_issues}}</a>
       </div>
     </div>
     <div class="spacer"></div>
-    <div class="second container mdl-card mdl-shadow--2dp">
-      <h5>Contributors</h5> 
+    <div class="second container shadow-1">
+      <h3>Contributors</h3> 
       <ul *ngIf="contributors">
         <li class="contributor" *ngFor="let user of contributors">
           <a href="{{user.html_url}}">

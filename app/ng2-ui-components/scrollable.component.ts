@@ -8,7 +8,7 @@ import { NG2_DIRECTIVES, Ng2ScrollableDirective } from 'ng2-ui';
       <h1>Scrollable</h1>
     </div>
     <div class="container">
-      <h4>Scroll Within a Section Vertically</h4>
+      <h2>Scroll Within a Section Vertically</h2>
       <ul>
         <li *ngFor="let num of [1,2,3,4,5,6,7,8,9,10]"
             [class.current]="id == 's'+ num "
@@ -98,7 +98,7 @@ ul li.current { background: #333; color: #fff}
       </ng2-tab>
       
       <div class="spacer"></div>
-      <h4>Scroll Within a Section Horizontally</h4>
+      <h2>Scroll Within a Section Horizontally</h2>
       <ul>
         <br/>
         <li *ngFor="let num of [1,2,3,4,5,6,7,8,9,10]"
@@ -132,7 +132,7 @@ ul li.current { background: #333; color: #fff}
          <div class="tab-contents">
            <div contents="html">
 <pre><code class="language-markup"
->&lt;h4>Scroll Within a Section Horizontally&lt;/h4>
+>&lt;h2>Scroll Within a Section Horizontally&lt;/h2>
 &lt;ul>
   &lt;br/>
   &lt;li *ngFor="let num of [1,2,3,4,5,6,7,8,9,10]"
@@ -207,7 +207,7 @@ ul li.current { background: #333; color: #fff}
       </ng2-tab>
       
       <div class="spacer"></div>
-      <h4>Scroll Within Window</h4>
+      <h2>Scroll Within Window</h2>
       <div class="scrollable window"
            (elementVisible)="wid = $event.id"
            (elementHidden)="whid = $event.id"

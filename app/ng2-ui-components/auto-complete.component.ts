@@ -7,7 +7,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
       <h1>Auto Complete</h1>
     </div>
     <div class="container">
-      <h4> Autocomplete From Local Source </h4>
+      <h2> Autocomplete From Local Source </h2>
       <div class="spacer x3"></div>
       <div class="container round-border">
         <div class="title">Simple string of array as source</div>
@@ -59,7 +59,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
        display-property-name="name"/></code></pre>
       </div>
         
-      <h4> Autocomplete From Remote Source </h4>
+      <h2> Autocomplete From Remote Source </h2>
       
       <div class="spacer x3"></div>
       <div class="container round-border">

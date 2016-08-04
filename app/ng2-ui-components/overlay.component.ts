@@ -20,7 +20,7 @@ import { NG2_DIRECTIVES, OverlayManager } from 'ng2-ui';
         <li>Etc</li>
       </ol>
       
-      <h4>Window Overlay - Modal</h4>
+      <h2>Window Overlay - Modal</h2>
       <div id="window-loading" ng2-overlay-of="window">
         <div style="color:#fff">Loading</div>
         <button (click)="overlayManager.close('window-loading')">Close</button>

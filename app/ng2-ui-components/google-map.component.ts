@@ -10,7 +10,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
     <div class="container">
     
       <div class="spacer x3"></div>
-      <h4>Simple Map</h4>
+      <h2>Simple Map</h2>
       <div>
         <div class="tabs">
           <div class="tab" (click)="tab4=1" [class.selected]="tab4===1">html</div>
@@ -36,7 +36,7 @@ class AppCompoment {}</code></pre>
       </div>
           
       <div class="spacer x3"></div>
-      <h4>Simple Marker</h4>
+      <h2>Simple Marker</h2>
       <div>
         <div class="tabs">
           <div class="tab" (click)="tab1=1" [class.selected]="tab1===1">html</div>
@@ -70,7 +70,7 @@ class AppCompoment {
       </div>
       
       <div class="spacer x3"></div>
-      <h4>Simple InfoWindow</h4>
+      <h2>Simple InfoWindow</h2>
       <div>
         <div class="tabs">
           <div class="tab" (click)="tab2=1" [class.selected]="tab2===1">html</div>
@@ -107,7 +107,7 @@ class AppCompoment {
       </div>
      
       <div class="spacer x3"></div>
-      <h4>Markers with *ngFor</h4>
+      <h2>Markers with *ngFor</h2>
         <ng2-map zoom="13" center="Brampton, Canada">
           <marker *ngFor="let pos of positions" [position]="pos"></marker>
         </ng2-map>

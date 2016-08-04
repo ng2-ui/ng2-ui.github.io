@@ -8,7 +8,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
       <h1>Tab</h1>
     </div>
     <div class="container">
-     <h4> Simple Tab </h4>
+     <h2> Simple Tab </h2>
      <div ng2-tab>
        <div class="tabs">
           <div index="html">HTML</div>
@@ -44,7 +44,7 @@ export class AppComponent{
       </div>
       
       <br/><br/>
-      <h4> Tab with animation </h4>
+      <h2> Tab with animation </h2>
       <ng2-tab
         selected="js"
         selected-index-class="selected"

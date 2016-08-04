@@ -1,38 +1,38 @@
-* {
-  box-sizing: border-box
+.container {
+  width: auto;
+  background: #fff;
+  border: 1px #e5e5e5 solid;
+  border-radius: 2px;
+}
+.shadow-1 {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14);
+}
+.shadow-2 {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+
+input {
+  padding: 5px;
+}
+pre {
+  padding: 16px;
+  line-height: 18px;
+  background-color: #f7f7f7;
 }
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
-  height: 100%;
   background: #f5f5f5;
+  font-size: 16px;
 }
+
 ul, li {
   list-style: none;
   display: block;
   margin: 0;
   padding: 0;
 }
-input {
-  padding: 5px;
-}
 
-pre {
-  margin: 0;
-  padding: 16px;
-  overflow: auto;
-  font-size: 75%;
-  background-color: #f7f7f7;
-  border-radius: 3px;
-}
-button {
-  padding: 5px;
-  font-size: 1em;
-  border-radius: 5px;
-  background-color: #eee;
-  border: 1px outset #ccc;
-  margin: 5px;
-}
-* {box-sizing: border-box}
+
 
 /**
  * drawer
@@ -49,10 +49,6 @@ button {
   top: 0;
   bottom: 0;
   z-index: 2;
-}
-.drawer::-webkit-scrollbar {
-  width: 0 !important;
-  height: 0 !important;
 }
 .drawer > * {
   display: flex;
@@ -113,6 +109,7 @@ button {
     align-items: inherit;
   }
   .drawer .logo img {
+    vertical-align: middle;
     width: 56px;
   }
   .drawer ul {
@@ -266,12 +263,6 @@ main .repo-info .container {
 .spacer.x6 { height: 72px; width: 72px; }
 .spacer.x7 { height: 84px; width: 84px; }
 .spacer.x8 { height: 96px; width: 96px; }
-
-.clearfix:before, .clearfix:after {
-  content: '';
-  display: table;
-  clear: both;
-}
 
 .tabs {
   position: relative;

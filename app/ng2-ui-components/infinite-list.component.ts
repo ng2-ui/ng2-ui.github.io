@@ -9,7 +9,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
     </div>
     <div class="container">
     
-      <h4>Vertically</h4>
+      <h2>Vertically</h2>
       <ul ng2-infinite-list  class="infinite-list"
           (endVisible)="loadMore(set1)">
         <li *ngFor="let item of set1.list">{{item+1}}</li>
@@ -75,7 +75,7 @@ export class AppComponent {
       </div>
     
       <div class="spacer x3"></div>
-      <h4>Horizontally</h4>
+      <h2>Horizontally</h2>
       <div ng2-infinite-list horizontal="true"
            class="infinite-list horizontal"
            (endVisible)="loadMore(set2)">
