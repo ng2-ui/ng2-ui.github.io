@@ -4,7 +4,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
 @Component({
   directives: [ NG2_DIRECTIVES ],
   template: `
-    <div class="container bg-sky title">
+    <div class="container page-title">
       <h1>Tab</h1>
     </div>
     <div class="container">

@@ -5,7 +5,7 @@ import { NG2_DIRECTIVES, NG2_PROVIDERS } from 'ng2-ui';
   directives: [ NG2_DIRECTIVES ],
   providers: [ NG2_PROVIDERS ],
   template: `
-    <div class="container bg-sky title">
+    <div class="container page-title">
       <h1>Tooltip</h1>
     </div>
     <div class="container">

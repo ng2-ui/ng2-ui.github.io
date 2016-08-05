@@ -1,8 +1,31 @@
+
+html, body {
+  font-size: 14px;
+}
+
+input {
+  padding: 5px;
+}
+
+ng2-tab {
+  padding: 10px 0;
+  display: block;
+}
+
+a:hover{
+  text-decoration:none;
+}
+
+pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
 .container {
   width: auto;
-  background: #fff;
-  border: 1px #e5e5e5 solid;
-  border-radius: 2px;
 }
 .shadow-1 {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14);
@@ -10,197 +33,112 @@
 .shadow-2 {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
 }
-
-input {
-  padding: 5px;
+.w-980 {
+  width: 980px;
 }
-pre {
-  padding: 16px;
-  line-height: 18px;
-  background-color: #f7f7f7;
-}
-html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  background: #f5f5f5;
-  font-size: 16px;
-}
-
-ul, li {
-  list-style: none;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-/**
- * drawer
- */
-.drawer {
-  display: block;
-  background: #37474F;
-  border: none;
-  box-sizing: border-box;
-  width: 240px;
-  overflow-y: auto;
-  padding: 16px 0px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 2;
-}
-.drawer > * {
-  display: flex;
-  flex-direction: column;
-}
-.drawer .logo {
-  align-items: center;
-  padding: 16px;
-}
-.drawer .logo img {
-  width: 128px;
-  border-radius: 10px;
-}
-.drawer a {
-  text-decoration: none;
-  color: rgba(236, 239, 241, 0.5);
-  padding: 16px 20px;
-  display: flex;
-  align-items: center;
-}
-.drawer a:hover {
-  color: #fff;
-}
-
-.drawer li a:hover {
-  background: #07ACC1;
-}
-.drawer .material-icons {
-  margin-right: 22px;
-  font-size: 24px;
-  background: #EF3C79;
-  border-radius: 50%;
-  padding: 10px;
+.v-middle {
   vertical-align: middle;
 }
-.drawer li a:hover .material-icons {
-  background: rgba(239, 60, 121, 0.6);
-  color: #fff;
+
+/**
+ * header
+ */
+.masthead {
+  text-align: left;
+  padding: 16px 0;
+  margin-bottom: 24px;
+  text-align: center;
+  background-color: #4078c0;
 }
-@media screen and (max-width: 1024px) {
-  .drawer {
-    position: fixed;
-    height: 64px;
-    padding: 0;
-    top: 0;
-    display: block;
-    overflow-y: hidden;
-    white-space: nowrap;
-    width: 100%;
-    overflow-x: auto;
-  }
-  .drawer > * {
-    display: inline-block;
-    flex-direction: inherit;
-  }
-  .drawer .logo {
-    padding: 4px;
-    align-items: inherit;
-  }
-  .drawer .logo img {
-    vertical-align: middle;
-    width: 56px;
-  }
-  .drawer ul {
-    display: inline-block;
-    flex-direction: inherit;
-    align-items: inherit;
-  }
-  .drawer ul li {
-    display: inline-block;
-  }
-  .drawer a {
-    padding: 5px 15px;
-    display: inline-block;
-    align-items: inherit;
-  }
-  .drawer a.components.header {
-    display: none;
-  }
-  .drawer .material-icons {
-    margin: 0;
-    background: transparent;
-    border-radius: 0;
-    padding: 5px;
-    text-align: center;
-  }
-  .drawer li a:hover .material-icons {
-    background: none;
-    color: #fff;
-  }
-  input {
-    width: auto !important;
-  }
+.masthead .container {
+  padding: 0 20px;
+}
+.masthead .logo {
+  font-size: 1.5em;
+}
+.masthead-nav {
+  float: right;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.masthead-nav a:not(:last-child) {
+  margin-right: 1.25rem;
+}
+.masthead-nav .numbers {
+  vertical-align: bottom;
 }
 
 /**
  * main
  */
-main {
-  margin: 0px 0 0 240px;
-  width: calc(100% - 240px);
-  max-width: 1024px;
-  padding: 12px;
-}
-main > .title {
-  padding: 12px 48px;
-}
-main .main-contents {
-  width: 75%;
-  float: left;
-}
-main .repo-info {
-  display: block;
-  width: calc(25% - 12px);
-  float: left;
-}
-main .repo-info .container {
-  width: 100%;
-}
-@media screen and (max-width: 1024px) {
-  main {
-    display: block !important;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 64px;
-  }
-}
-@media screen and (min-width: 840px) {
-  main > .spacer {
-    float: left;
-  }
-}
-@media screen and (max-width: 840px) {
-  main .main-contents {
-    width: 100%;
-    float: none;
-  }
-  main .repo-info {
-    width: 100%;
-    float: none;
-  }
-  main .repo-info .spacer {
-    float: left;
-  }
-  main .repo-info .container {
-    width: calc(50% - 6px);
-    float: left;
-  }
+
+.main h1,
+.main h2,
+.main h3,
+.main h4,
+.main h5,
+.main h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
 }
 
-.content {
-  max-width: 1080px;
+.main.container {
+  width: auto;
+  max-width: 1020px;
+  padding: 0 20px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.page-title {
+  border-bottom: 1px solid #eee;
+  font-size: 2.25em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  padding-bottom: 0.3em;
+}
+
+.page-title-description {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #555;
+}
+
+.main h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+/**
+ * main
+ */
+.drawer .menu-item.components:hover {
+  background-color: #fff;
+}
+.drawer .menu-item.components .menu {
+  border: none;
+}
+.drawer a {
+  cursor: pointer;
+}
+
+
+/**
+ * footer
+ */
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+  line-height: 1.75;
+  color: #7a7a7a;
+  border-top: 1px solid #eee;
 }
 
 .contributor {
@@ -228,42 +166,8 @@ main .repo-info .container {
 }
 
 /**
- * common classes
+ * tabs
  */
-.bg-sky {
-  background: linear-gradient(#0143A3,#0273D4);
-  color: #fff;
-}
-.container {
-  padding: 12px;
-  position: relative;
-}
-.container > .title {
-  background-color: white;
-  display: inline-block;
-  padding: 0 10px;
-  width: auto;
-  position: absolute;
-  top: -10px;
-}
-
-.round-border {
-  border-radius: 2px;
-  border: 1px solid #ccc;
-}
-
-.spacer {
-  height: 12px;
-  width: 12px;
-}
-.spacer.x2 { height: 24px; width: 24px; }
-.spacer.x3 { height: 36px; width: 36px; }
-.spacer.x4 { height: 48px; width: 48px; }
-.spacer.x5 { height: 69px; width: 69px; }
-.spacer.x6 { height: 72px; width: 72px; }
-.spacer.x7 { height: 84px; width: 84px; }
-.spacer.x8 { height: 96px; width: 96px; }
-
 .tabs {
   position: relative;
   top: 1px;

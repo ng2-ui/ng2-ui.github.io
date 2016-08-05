@@ -5,28 +5,25 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
   selector: 'drawer-component',
   directives: [ROUTER_DIRECTIVES],
   template: `
-    <div class="logo">
-      <img src="https://avatars1.githubusercontent.com/u/20460529?v=3&s=200" />
-    </div>
-    <ul>
-      <a routerLink="/getting-started">Getting Started</a>
-      <a class="components header" href="javascript:void(0)"><span>Components</span></a>
-      <ul>
-        <li><a routerLink="/auto-complete"><i class="material-icons">mouse</i>Auto Complete</a>
-        <li><a routerLink="/datetime-picker"><i class="material-icons">mouse</i>Datetime Picker</a>
-        <li><a routerLink="/google-map"><i class="material-icons">mouse</i>Google Map</a>
-        <li><a routerLink="/infinite-list"><i class="material-icons">mouse</i>Infinite List</a>
-        <li><a routerLink="/tab"><i class="material-icons">mouse</i>Tab</a>
-        <li><a routerLink="/accordion"><i class="material-icons">mouse</i>Accordion </a>
-        <!--<li><a routerLink="/overlay"><i class="material-icons">mouse</i>Overlay</a>-->
-        <li><a routerLink="/tooltip"><i class="material-icons">mouse</i>Tooltip</a>
-        <li><a routerLink="/menu"><i class="material-icons">mouse</i>Menu</a>
-        <li><a routerLink="/parallax"><i class="material-icons">mouse</i>Parallax Scroll</a>
-        <li><a routerLink="/popup"><i class="material-icons">mouse</i>Popup</a>
-        <li><a routerLink="/scrollable"><i class="material-icons">mouse</i>Scrollable</a>
-        <li><a routerLink="/sticky"><i class="material-icons">mouse</i>Sticky Section</a>
-      </ul>
-      <a href="https://github.com/ng2-ui/ng2-ui/issues">Help</a>
+    <ul class="menu">
+      <li class="menu-item" routerLinkActive="selected"><a routerLink="/getting-started">Getting Started</a>
+      <li class="menu-item components">
+        <div class="pb-3">Components</div>
+        <ul class="menu ">
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/auto-complete">Auto Complete</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/datetime-picker">Datetime Picker</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/google-map">Google Map</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/infinite-list">Infinite List</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/tab">Tab</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/accordion">Accordion </a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/tooltip">Tooltip</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/menu">Menu</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/parallax">Parallax Scroll</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/popup">Popup</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/scrollable">Scrollable</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/sticky">Sticky Section</a>
+        </ul>
+      <li class="menu-item"><a href="https://github.com/ng2-ui/ng2-ui/issues">Help</a>
     </ul>
   `
 })

@@ -15,7 +15,7 @@ class CustomPopupComponent {
 @Component({
   directives: [ NG2_DIRECTIVES ],
   template: `
-    <div class="container bg-sky title">
+    <div class="container page-title">
       <h1>Popup</h1>
     </div>
     <div class="container">

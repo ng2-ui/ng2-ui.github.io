@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 @Component({
   template: `
-<div class="container bg-sky title">
+<div class="container page-title">
   <h1>Getting Started</h1>
 </div>
 <div class="container">
-  ng2-ui is a collection of quality Angular2 directives.
-  To make ng2-ui available to your project, you need to install a npm package and 
-  import NG2_DIRECTIVES.
+  <p class="page-title-description">
+    ng2-ui is a collection of quality Angular2 directives.
+    To make ng2-ui available to your project, you need to install a npm package and 
+    import NG2_DIRECTIVES.
+  </p>
   
-  <h2>NPM Inatall</h2>
+  <h2>NPM Install</h2>
   <pre><code class="language-bash">$ npm install ng2-ui --save</code></pre>
   
   <h2>systemjs.config.js</h2>

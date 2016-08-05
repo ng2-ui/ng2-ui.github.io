@@ -5,7 +5,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
   directives: [ NG2_DIRECTIVES ],
   styles: [`input[ng2-datetime-picker] {width: 300px; height: 24px}`],
   template: `
-    <div class="container bg-sky title">
+    <div class="container page-title">
       <h1>Datetime Picker</h1>
     </div>
     

@@ -5,7 +5,7 @@ console.log('NG2_DIRECTIVES', NG2_DIRECTIVES);
 @Component({
   directives: [ NG2_DIRECTIVES ],
   template: `
-    <div class="container bg-sky title">
+    <div class="container page-title">
       <h1>Sticky</h1>
     </div>
     <div class="container">

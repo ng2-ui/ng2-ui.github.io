@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
 import {Router, NavigationStart} from "@angular/router";
 import {Http, Response} from "@angular/http";
 import {Observable} from "rxjs";
@@ -8,27 +8,44 @@ import {HttpCache} from './http-cache';
 @Component({
   selector: 'repo-info',
   template: `
-    <div class="first container shadow-1">
+    <div *ngIf="numbersSection">
       <div *ngIf="currentUrl && currentRepo">
-        <p>
-          <a href="{{currentRepo.html_url}}" class="button">
-            <span class="octicon octicon-mark-github"></span>
-            {{currentUrl.replace('/','')}} on Github
+        <span class="numbers d-inline-block">
+          <button class="btn btn-sm">
+            <a href="{{currentRepo.html_url}}">
+              <span class="octicon octicon-repo"></span>
+              {{currentUrl.replace('/','')}}
+            </a>
+          </button>
+        </span>
+        
+        <span class="numbers d-inline-block">
+          <button class="btn btn-sm btn-with-count">
+            <a href="{{currentRepo.html_url}}">
+              <span class="octicon octicon-star"></span>
+              Star           
+            </a>
+          </button>
+          <a class="social-count" 
+            href="{{currentRepo.html_url}}/stargazers">
+            {{currentRepo.stargazers_count}}
           </a>
-        <p>
-          <a href="{{currentRepo.html_url}}" class="button">
-            <i class="material-icons">star</i> <span>Star</span>
-            <span class="counter">
-              <b></b>
-              <i></i>
-              <span>{{currentRepo.stargazers_count}}</span>
-            </span>
-          </a> 
-        <p><a href="{{currentRepo.html_url}}/issues">open_issues: {{currentRepo.open_issues}}</a>
+        </span>
+        
+        <span class="numbers d-inline-block">
+          <button class="btn btn-sm">
+            <a href="{{currentRepo.html_url}}">
+              <span class="octicon octicon-issue-opened"></span>
+              {{currentRepo.open_issues}}
+              Issues
+            </a>
+          </button>
+        </span>
       </div>
     </div>
-    <div class="spacer"></div>
-    <div class="second container shadow-1">
+    
+    <div *ngIf="contributorsSection"
+      class="container p-3 border">
       <h3>Contributors</h3> 
       <ul *ngIf="contributors">
         <li class="contributor" *ngFor="let user of contributors">
@@ -48,6 +65,9 @@ import {HttpCache} from './http-cache';
   `
 })
 export class RepoInfoComponent {
+  @Input('contributors-section') contributorsSection: string;
+  @Input('numbers-section') numbersSection: string;
+
   currentUrl: string;
   repositories: any[];
   currentRepo: any;
