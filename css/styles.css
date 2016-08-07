@@ -121,6 +121,14 @@ pre {
   border-bottom: 1px solid #eee;
 }
 
+ng2-popup > div {
+  z-index: 1;
+}
+ng2-popup .popup-container.custom {
+  padding: 12px;
+  text-align: center;
+}
+
 /**
  * main
  */

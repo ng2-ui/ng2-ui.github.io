@@ -93,7 +93,18 @@ export class popupcomponent {
           <div contents="js">
 <pre><code class="language-javascript"
 >import {Component, ViewChild} from '@angular/core';
-import { NG2_DIRECTIVES, Ng2PopupComponent, Ng2MessagePopupComponent } from 'ng2-ui';
+import { NG2_DIRECTIVES, Ng2PopupComponent } from 'ng2-ui';
+
+@Component({
+  template: \`
+  &lt;p>This is custom popup&lt;/p>
+  \\{\\{number\\}\\} &lt;button (click)="number = number+1">increase number&lt;/button>&lt;br/>
+  &lt;button (click)="popup.close()">close&lt;/button>
+  \`
+})
+class CustomPopupComponent {
+  number: number = 0;
+}
 
 export class popupcomponent {
   @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
