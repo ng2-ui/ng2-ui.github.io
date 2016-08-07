@@ -11,7 +11,7 @@ console.log('NG2_DIRECTIVES', NG2_DIRECTIVES);
     <div class="container">
     
       <div class="sticky-container">
-        <div class="float-right">
+        <div class="sticky-float-right">
           <div ng2-sticky style="float: right"> float: right </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ export class AppComponent{
   background-size: 50px 50px;
   height: 300px;
 }
-.float-right {
+.sticky-float-right {
   background-color: rgba(0,255,0, .2);
 }
 div[ng2-sticky] {
@@ -68,7 +68,7 @@ div[ng2-sticky] {
       </ng2-tab>
       <div class="spacer"></div>
       <div class="sticky-container">
-        <div class="float-left">
+        <div class="sticky-float-left">
           <div ng2-sticky style="float: left"> float: left </div>
         </div>
       </div>
@@ -109,7 +109,7 @@ export class AppComponent{
   background-size: 50px 50px;
   height: 300px;
 }
-.float-left {
+.sticky-float-left {
   background-color: rgba(255,0,0, .2);
 }
 div[ng2-sticky] {
@@ -204,10 +204,10 @@ div[ng2-sticky] {
       background-size: 50px 50px;
       height: 300px;
     }
-    .float-left {
+    .sticky-float-left {
       background-color: rgba(255,0,0, .2);
     }
-    .float-right {
+    .sticky-float-right {
       background-color: rgba(0,255,0, .2);
     }
     .div-middle {
