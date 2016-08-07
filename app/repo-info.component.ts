@@ -34,7 +34,7 @@ import {HttpCache} from './http-cache';
         
         <span class="numbers d-inline-block">
           <button class="btn btn-sm">
-            <a href="{{currentRepo.html_url}}">
+            <a href="{{currentRepo.html_url}}/issues">
               <span class="octicon octicon-issue-opened"></span>
               {{currentRepo.open_issues}}
               Issues
