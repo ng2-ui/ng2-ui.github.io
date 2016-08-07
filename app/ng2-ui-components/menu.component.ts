@@ -85,43 +85,67 @@ export class AppComponent{
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet"
->ul.horizontal-menu {
+>ul.horizontal-menu,
+.has-ng2-menu ul[ng2-menu]
+{
+  background: #3db2e1;
+  background: -moz-linear-gradient(top, #69c4e8, #21a1d4);
+  background: -ms-linear-gradient(top, #69c4e8, #21a1d4);
+  background: -o-linear-gradient(top, #69c4e8, #21a1d4);
+  background: -webkit-linear-gradient(top, #69c4e8, #21a1d4);
+  background: linear-gradient(to bottom, #69c4e8, #21a1d4);
+  border-radius: 2px;
+  box-shadow: inset 0 -3px 0 #1f97c7, inset 0 -3px 3px #1f9acc, inset 0 2px 2px #9ad7ef, inset 1px 0 2px #22a4d9, inset -1px 0 2px #22a4d9, 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06), 0 3px 3px rgba(0, 0, 0, 0.17), 2px 1px 2px rgba(0, 0, 0, 0.05), -2px 1px 2px rgba(0, 0, 0, 0.05);
   display: inline-block;
-  width: 600px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  width: auto;
 }
 ul.horizontal-menu > li {
-  border: 1px solid #ccc;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  -webkit-transition: color .2s ease;
+  color: #ffffff;
   display: inline-block !important;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  transition: color .2s ease;
 }
+ul.horizontal-menu > li:hover,
+.has-ng2-menu li:hover {
+  color: #ccc;
+}
+ul.horizontal-menu > li:hover ul,
+.has-ng2-menu li:hover ul {
+  color: #fff;
+}
+
 .dropdown-menu, .right-side-menu, .bottom-menu {
   display: inline-block;
 }
 
 .has-ng2-menu.active {
   color: #fff;
-  background-color: #333;
 }
 .has-ng2-menu::after {
-  content: '\2630';
-  display: 'inline-block';
-  border: 1px solid #eee;
-  width: 1em;
-  height: 1em;
+  content: '\25bc';
+  display: inline-block;
+  padding: 6px 12px;
   text-align: center;
   float: right;
-  line-height: 1em;
+  font-size: 8px;
+  line-height: 13px;
 }
 .has-ng2-menu.active::after {
-  content: '-';
-  border: 1px solid #eee;
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  display: 'inline-block';
-  float: right;
-}
-.has-ng2-menu ul[ng2-menu] {
   color: #333;
+}
+
+.has-ng2-menu ul[ng2-menu] {
   background-color: #fff;
   display: none;
   list-style: none;
@@ -132,13 +156,12 @@ ul.horizontal-menu > li {
   display: inline-block;
 }
 .has-ng2-menu > ul[ng2-menu] > li {
-  box-sizing: border-box;
   display: block;
   margin: 0;
-  padding: 5px;
-  border: 1px solid #ccc;
+  padding: 10px;
   white-space: nowrap;
 }
+
 </code></pre>
            </div>
          </div>
@@ -148,6 +171,7 @@ ul.horizontal-menu > li {
       <h2>Right-Side Menu</h2>
       
       <div class="right-side-menu">
+        Menu
         <ul ng2-menu="right">
           <li> Menu Item 1 
             <ul ng2-menu="right">
