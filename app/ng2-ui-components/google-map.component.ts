@@ -10,6 +10,52 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
     <div class="container">
     
       <div class="spacer x3"></div>
+      <h2>Markers with *ngFor</h2>
+        <ng2-map zoom="13" center="Brampton, Canada" scrollwheel="false">
+          <marker *ngFor="let pos of positions" [position]="pos"></marker>
+        </ng2-map>
+        <button (click)="showRandomMarkers()">Show Random Markers</button>
+      <div>
+        <div class="tabs">
+          <div class="tab" (click)="tab3=1" [class.selected]="tab3===1">html</div>
+          <div class="tab" (click)="tab3=2" [class.selected]="tab3===2">javascript</div>
+        </div>
+        <div class="tab-contents">
+          <div *ngIf="tab3===1">
+            <pre><code class="language-markup"
+>&lt;ng2-map zoom="13" center="Brampton, Canada" scrollwheel="false">
+  &lt;marker *ngFor="let pos of positions" [position]="pos">&lt;/marker>
+&lt;/ng2-map>
+&lt;button (click)="showRandomMarkers()">Show Random Markers&lt;/button></code></pre>
+          </div>
+          <div *ngIf="tab3===2">
+            <pre><code class="language-markup"
+            >import { Component } from '@angular/core';
+import { NG2_DIRECTIVES } from 'ng2-ui';
+
+@Component({
+  directives: [ NG2_DIRECTIVES ],
+  templateUrl: 'app.html'
+})
+class AppCompoment {
+  public positions=[];
+  
+  showRandomMarkers() {
+    let randomLat: number, randomLng: number;
+
+    this.positions = [];
+    for (let i=0; i<9; i++) {
+      randomLat = Math.random() * (43.7399 - 43.7300) + 43.7300;
+      randomLng = Math.random() * (-79.7600 - -79.7699) + -79.7699;
+      this.positions.push([randomLat, randomLng]);
+    }
+  }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+      
+      <div class="spacer x3"></div>
       <h2>Simple Map</h2>
       <div>
         <div class="tabs">
@@ -106,51 +152,6 @@ class AppCompoment {
         </div>
       </div>
      
-      <div class="spacer x3"></div>
-      <h2>Markers with *ngFor</h2>
-        <ng2-map zoom="13" center="Brampton, Canada">
-          <marker *ngFor="let pos of positions" [position]="pos"></marker>
-        </ng2-map>
-        <button (click)="showRandomMarkers()">Show Random Markers</button>
-      <div>
-        <div class="tabs">
-          <div class="tab" (click)="tab3=1" [class.selected]="tab3===1">html</div>
-          <div class="tab" (click)="tab3=2" [class.selected]="tab3===2">javascript</div>
-        </div>
-        <div class="tab-contents">
-          <div *ngIf="tab3===1">
-            <pre><code class="language-markup"
->&lt;ng2-map zoom="13" center="Brampton, Canada">
-  &lt;marker *ngFor="let pos of positions" [position]="pos">&lt;/marker>
-&lt;/ng2-map>
-&lt;button (click)="showRandomMarkers()">Show Random Markers&lt;/button></code></pre>
-          </div>
-          <div *ngIf="tab3===2">
-            <pre><code class="language-markup"
-            >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
-
-@Component({
-  directives: [ NG2_DIRECTIVES ],
-  templateUrl: 'app.html'
-})
-class AppCompoment {
-  public positions=[];
-  
-  showRandomMarkers() {
-    let randomLat: number, randomLng: number;
-
-    this.positions = [];
-    for (let i=0; i<9; i++) {
-      randomLat = Math.random() * (43.7399 - 43.7300) + 43.7300;
-      randomLng = Math.random() * (-79.7600 - -79.7699) + -79.7699;
-      this.positions.push([randomLat, randomLng]);
-    }
-  }
-}</code></pre>
-          </div>
-        </div>
-      </div>
     </div>`
 })
 export class GoogleMapComponent {
