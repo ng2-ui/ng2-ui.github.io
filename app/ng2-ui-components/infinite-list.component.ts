@@ -19,27 +19,26 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
         </div>
       </ul>
       loading in progress : {{set1.loadingInProgress}}
-      <div>
+      <ng2-tab>
         <div class="tabs">
-          <div class="tab" (click)="tab1=1" [class.selected]="!tab1 || tab1===1">html</div>
-          <div class="tab" (click)="tab1=2" [class.selected]="tab1===2">javascript</div>
-        </div>
-        <div class="tab-contents">
-          <div *ngIf="!tab1 || tab1===1">
-            <pre><code class="language-markup"
-            >&lt;ul ng2-infinite-list  class="infinite-list"
+           <div index="html">HTML</div>
+           <div index="js">Javascript</div>
+         </div> 
+         <div class="tab-contents">
+           <div contents="html">
+<pre><code class="language-markup"
+>&lt;ul ng2-infinite-list  class="infinite-list"
           (endVisible)="loadMore(set1)">
         &lt;li *ngFor="let item of set1.list">{{item+1}}&lt;/li>
         &lt;div ng2-infinite-list-end>
           &lt;div *ngIf="set1.loadingInProgress">Loading&lt;/div>
           &lt;div *ngIf="set1.endOfList">End Of List&lt;/div>
         &lt;/div>
-      &lt;/ul>
-            </code></pre>
-          </div>
-          <div *ngIf="tab1===2">
-            <pre><code class="language-markup"
-            >import { Component } from '@angular/core';
+      &lt;/ul></code></pre>
+           </div>
+           <div contents="js">
+<pre><code class="language-javascript"
+>import { Component } from '@angular/core';
 import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
@@ -70,9 +69,9 @@ export class AppComponent {
     }
   }
 }</code></pre>
-          </div>
-        </div>
-      </div>
+           </div>
+         </div>
+      </ng2-tab>
     
       <div class="spacer x3"></div>
       <h2>Horizontally</h2>
@@ -87,15 +86,15 @@ export class AppComponent {
         </div>
       </div>
       loading in progress : {{set2.loadingInProgress}}      
-      <div>
+      <ng2-tab>
         <div class="tabs">
-          <div class="tab" (click)="tab2=1" [class.selected]="!tab2 || tab2===1">html</div>
-          <div class="tab" (click)="tab2=2" [class.selected]="tab2===2">javascript</div>
-        </div>
-        <div class="tab-contents">
-          <div *ngIf="!tab2 || tab2===1">
-            <pre><code class="language-markup"
-            >&lt;div ng2-infinite-list horizontal="true"
+           <div index="html">HTML</div>
+           <div index="js">Javascript</div>
+         </div> 
+         <div class="tab-contents">
+           <div contents="html">
+<pre><code class="language-markup"
+>&lt;div ng2-infinite-list horizontal="true"
            class="infinite-list horizontal"
            (endVisible)="loadMore(set2)">
         &lt;div *ngFor="let item of set2.list">{{item+1}}&lt;/div>
@@ -106,10 +105,10 @@ export class AppComponent {
         &lt;/div>
       &lt;/div>
 </code></pre>
-          </div>
-          <div *ngIf="tab2===2">
-            <pre><code class="language-markup"
-            >import { Component } from '@angular/core';
+           </div>
+           <div contents="js">
+<pre><code class="language-javascript"
+>import { Component } from '@angular/core';
 import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
@@ -140,10 +139,9 @@ export class AppComponent {
     }
   }
 }</code></pre>
-          </div>
-        </div>
-      </div>
-    </div>
+           </div>
+         </div>
+      </ng2-tab>
 `,
   styles: [`
     .infinite-list {
