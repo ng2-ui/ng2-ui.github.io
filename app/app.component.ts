@@ -7,7 +7,7 @@ import { HTTP_PROVIDERS } from "@angular/http";
 import { DrawerComponent } from "./drawer.component";
 import { RepoInfoComponent } from "./repo-info.component";
 import { HttpCache } from './http-cache';
-import {Ng2Storage} from "./ng2-storage";
+import { Ng2Storage } from "./ng2-storage";
 
 @Component({
   selector: 'my-app',
