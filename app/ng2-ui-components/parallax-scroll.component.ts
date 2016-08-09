@@ -8,7 +8,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
       <h1>Parallax Scroll</h1>
     </div>
     <div class="container">
-      <div style="height: 300px"> 
+      <div style="height: 400px"> 
         <p>
           <b>Parallax scrolling</b> is a scrolling technique used computer graphics
           in which background images move more slowly than images in the foreground, 
@@ -20,7 +20,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
           should be smaller than the image behind.
         </p>
       </div>
-      <div ng2-parallax style="height: 300px">
+      <div ng2-parallax style="height: 400px">
         <img src="http://materializecss.com/images/parallax1.jpg" />
       </div>
       <ng2-tab>
@@ -31,7 +31,7 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
          <div class="tab-contents">
            <div contents="html">
 <pre><code class="language-markup"
->&lt;div ng2-parallax style="height: 300px">
+>&lt;div ng2-parallax style="height: 400px">
   &lt;img src="http://materializecss.com/images/parallax1.jpg" />
 &lt;/div>
 </code></pre>
@@ -52,10 +52,10 @@ export class AppComponent{
       </ng2-tab>
       <br/>
       <br/>
-      <div ng2-parallax style="height: 300px">
+      <div ng2-parallax style="height: 400px">
         <img src="http://materializecss.com/images/parallax2.jpg" />
       </div>
-      <div style="height: 300px">
+      <div style="height: 400px">
          This space is intentionally added for scrolling
       </div>
     </div>`
