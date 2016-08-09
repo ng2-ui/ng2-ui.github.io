@@ -127,7 +127,7 @@ export class RepoInfoComponent {
       case '/accordion':       return 'https://api.github.com/repos/ng2-ui/ng2-collapsable';
       case '/tooltip':         return 'https://api.github.com/repos/ng2-ui/ng2-tooltip-overlay';
       case '/menu':            return 'https://api.github.com/repos/ng2-ui/ng2-menu';
-      case '/parallax-scroll': return 'https://api.github.com/repos/ng2-ui/ng2-parallax-scroll';
+      case '/parallax':        return 'https://api.github.com/repos/ng2-ui/ng2-parallax-scroll';
       case '/popup':           return 'https://api.github.com/repos/ng2-ui/ng2-popup';
       case '/scrollable':      return 'https://api.github.com/repos/ng2-ui/ng2-scrollable';
       case '/sticky':          return 'https://api.github.com/repos/ng2-ui/ng2-sticky';
