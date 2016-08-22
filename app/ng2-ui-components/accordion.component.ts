@@ -33,10 +33,10 @@ import { Component } from '@angular/core';
   selected-index-class="selected"
   selected-contents-class="selected">
   &lt;div index="html">HTML&lt;/div>
-  &lt;div contents="html">HTML {{foo}}&lt;/div>
+  &lt;div contents="html">HTML &123;&123;foo&125;&125;&lt;/div>
   
   &lt;div index="js">Javascript&lt;/div>
-  &lt;div contents="js">Javascript {{bar}}&lt;/div>
+  &lt;div contents="js">Javascript &123;&123;bar&125;&125;&lt;/div>
   
   &lt;div index="css">Css&lt;/div>
   &lt;div contents="css">Style Sheet&lt;/div>
@@ -44,15 +44,15 @@ import { Component } from '@angular/core';
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import { Component } from '@angular/core';
+>import &123; Component &125; from '@angular/core';
 
-@Component({
+@Component(&123;
   templateUr: 'app.html'
-})
-export class AppComponent{
+&125;)
+export class AppComponent &123;
   foo: any = 'foo';
   bar: any = 'bar';
-}</code></pre>
+&125;</code></pre>
           </div>
         </div>
       </div>

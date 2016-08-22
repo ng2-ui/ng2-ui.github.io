@@ -28,25 +28,25 @@ import { Component } from '@angular/core';
           </div>
           <div *ngIf="tab3===2">
             <pre><code class="language-markup"
-            >import { Component } from '@angular/core';
+            >import &123; Component &125; from '@angular/core';
 
-@Component({
+@Component(&123;
   templateUrl: 'app.html'
-})
-class AppCompoment {
+&125;)
+class AppCompoment &123;
   public positions=[];
   
-  showRandomMarkers() {
+  showRandomMarkers() &123;
     let randomLat: number, randomLng: number;
 
     this.positions = [];
-    for (let i=0; i<9; i++) {
+    for (let i=0; i<9; i++) &123;
       randomLat = Math.random() * (43.7399 - 43.7300) + 43.7300;
       randomLng = Math.random() * (-79.7600 - -79.7699) + -79.7699;
       this.positions.push([randomLat, randomLng]);
-    }
-  }
-}</code></pre>
+    &125;
+  &125;
+&125;</code></pre>
           </div>
         </div>
       </div>
@@ -65,12 +65,12 @@ class AppCompoment {
           </div>
           <div *ngIf="tab4===2">
             <pre><code class="language-markup"
-            >import { Component } from '@angular/core';
+            >import &123; Component &125; from '@angular/core';
 
-@Component({
+@Component(&123;
   templateUrl: 'app.html'
-})
-class AppCompoment {}</code></pre>
+&125;)
+class AppCompoment &123;&125;</code></pre>
           </div>
         </div>
       </div>
@@ -93,16 +93,16 @@ class AppCompoment {}</code></pre>
           </div>
           <div *ngIf="tab1===2">
             <pre><code class="language-markup"
-            >import { Component } from '@angular/core';
+            >import &123; Component &125; from '@angular/core';
 
-@Component({
+@Component(&123;
   templateUrl: 'app.html'
-})
-class AppCompoment {
-  log(marker, str) {
+&125;)
+class AppCompoment &123;
+  log(marker, str) &123;
     console.log('event .... >', marker, str);
-  }
-}</code></pre>
+  &125;
+&125;</code></pre>
           </div>
         </div>
       </div>
@@ -126,18 +126,18 @@ class AppCompoment {
           </div>
           <div id="javascript" *ngIf="tab2===2">
 <pre><code class="language-javascript"
->import { Component } from '@angular/core';
+>import &123; Component &125; from '@angular/core';
 
-@Component({
+@Component(&123;
   templateUrl: 'app.html'
-})
-class AppCompoment {
-  clicked(marker) {
-    marker.map.mapComponent.openInfoWindow('iw', marker, {
+&125;)
+class AppCompoment &123;
+  clicked(marker) &123;
+    marker.map.mapComponent.openInfoWindow('iw', marker, &123;
       lat: marker.getPosition().lat(), lng: marker.getPosition().lng()
-    })
-  }
-}</code></pre>
+    &125;)
+  &125;
+&125;</code></pre>
           </div>
         </div>
       </div>

@@ -27,5 +27,5 @@ export const ComponentsRoutes: Routes = [
   {path: 'parallax', component: ParallaxScrollComponent},
   {path: 'popup', component: PopupComponent},
   {path: 'scrollable', component: ScrollableComponent},
-  {path: 'sticky', component: StickyComponent}
+  {path: 'sticky', component: StickyComponent} 
 ];

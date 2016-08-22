@@ -31,33 +31,33 @@ import { Component } from '@angular/core';
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import { Component } from '@angular/core';
+>import &123; Component &125; from '@angular/core';
 
-@Component({
+@Component(&123;
   templateUr: 'app.html'
-})
-export class AppComponent{
-}</code></pre>
+&125;)
+export class AppComponent&123;
+&125;</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet"
->.sticky-container > div {
+>.sticky-container > div &123;
   border: 1px solid #333;
   background-image: linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
   background-size: 50px 50px;
   height: 300px;
-}
-.sticky-float-right {
+&125;
+.sticky-float-right &123;
   background-color: rgba(0,255,0, .2);
-}
-div[ng2-sticky] {
+&125;
+div[ng2-sticky] &123;
   min-width: 400px;
   text-align: center;
   background: #333;
   color: #fff;
   border: 1px solid #333;
   padding: 10px;
-}</code></pre>
+&125;</code></pre>
            </div>
          </div>
       </ng2-tab>
@@ -86,33 +86,33 @@ div[ng2-sticky] {
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import { Component } from '@angular/core';
+>import &123; Component &125; from '@angular/core';
 
-@Component({
+@Component(&123;
   templateUr: 'app.html'
-})
-export class AppComponent{
-}</code></pre>
+&125;)
+export class AppComponent&123;
+&125;</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet"
->.sticky-container > div {
+>.sticky-container > div &123;
   border: 1px solid #333;
   background-image: linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
   background-size: 50px 50px;
   height: 300px;
-}
-.sticky-float-left {
+&125;
+.sticky-float-left &123;
   background-color: rgba(255,0,0, .2);
-}
-div[ng2-sticky] {
+&125;
+div[ng2-sticky] &123;
   min-width: 400px;
   text-align: center;
   background: #333;
   color: #fff;
   border: 1px solid #333;
   padding: 10px;
-}
+&125;
 </code></pre>
            </div>
          </div>
@@ -147,36 +147,36 @@ div[ng2-sticky] {
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import { Component } from '@angular/core';
+>import &123; Component &125; from '@angular/core';
 
-@Component({
+@Component(&123;
   templateUr: 'app.html'
-})
-export class AppComponent{
-}</code></pre>
+&125;)
+export class AppComponent&123;
+&125;</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet"
->.sticky-container > div {
+>.sticky-container > div &123;
   border: 1px solid #333;
   background-image: linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
   background-size: 50px 50px;
   height: 300px;
-}
-.div-middle {
+&125;
+.div-middle &123;
   background-color: rgba(0,0,255, .2);
-}
-div[ng2-sticky] {
+&125;
+div[ng2-sticky] &123;
   min-width: 400px;
   text-align: center;
   background: #333;
   color: #fff;
   border: 1px solid #333;
   padding: 10px;
-}
-.div-middle div[ng2-sticky] {
+&125;
+.div-middle div[ng2-sticky] &123;
   margin: 0;
-}
+&125;
 </code></pre>
            </div>
          </div>

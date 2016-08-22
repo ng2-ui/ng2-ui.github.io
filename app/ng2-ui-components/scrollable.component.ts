@@ -41,10 +41,10 @@ import { Ng2ScrollableDirective } from 'ng2-ui';
 >&lt;ul>
   &lt;li *ngFor="let num of [1,2,3,4,5,6,7,8,9,10]"
       [class.current]="id == 's'+ num "
-      (click)="scrollTo('#s'+num, '#v-scrollable')">{{num}}
+      (click)="scrollTo('#s'+num, '#v-scrollable')">&123;&123;num&125;&125;
 &lt;/ul>
 
-scrolled to: {{id}}
+scrolled to: &123;&123;id&125;&125;
 &lt;div id="v-scrollable" class="scrollable section"
      ng2-scrollable (elementVisible)="id = $event.id">
   &lt;div id="s1">Section 1  (scroll to here)&lt;/div>
@@ -62,34 +62,34 @@ scrolled to: {{id}}
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import { Component } from '@angular/core';
-import { Ng2ScrollableDirective } from 'ng2-ui';
+>import &123; Component &125; from '@angular/core';
+import &123; Ng2ScrollableDirective &125; from 'ng2-ui';
 
-@Component({
+@Component(&123;
   templateUr: 'app.html'
-})
-export class AppComponent{
+&125;)
+export class AppComponent&123;
   id: string = 's1';
-  scrollTo(selector, parentSelector, horizontal) {
+  scrollTo(selector, parentSelector, horizontal) &123;
     Ng2ScrollableDirective.scrollTo(
       selector,       // scroll to this
       parentSelector, // scroll within (null if window scrolling)
       horizontal,     // is it horizontal scrolling
       10              // distance from top or left
     );
-  }
-}</code></pre>
+  &125;
+&125;</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet"
->ul {list-style: none}
-ul li {display: inline-block; border: 1px solid #999; padding: 10px; cursor: pointer;}
-ul li.current { background: #333; color: #fff}
-.scrollable { height: 200px; border: 1px solid #999; position: relative;}
-.scrollable.window { height: auto;}
-.scrollable > div {height: 110px}
-.scrollable > div:nth-child(odd) { background-color: #ccc}
-.scrollable.section {overflow:auto;}
+>ul &123;list-style: none&125;
+ul li &123;display: inline-block; border: 1px solid #999; padding: 10px; cursor: pointer;&125;
+ul li.current &123; background: #333; color: #fff&125;
+.scrollable &123; height: 200px; border: 1px solid #999; position: relative;&125;
+.scrollable.window &123; height: auto;&125;
+.scrollable > div &123;height: 110px&125;
+.scrollable > div:nth-child(odd) &123; background-color: #ccc&125;
+.scrollable.section &123;overflow:auto;&125;
 </code></pre>
            </div>
          </div>
@@ -135,10 +135,10 @@ ul li.current { background: #333; color: #fff}
   &lt;br/>
   &lt;li *ngFor="let num of [1,2,3,4,5,6,7,8,9,10]"
       [class.current]="hid == 'h'+ num "
-      (click)="scrollTo('#h'+num, '#h-scrollable', true)">{{num}}
+      (click)="scrollTo('#h'+num, '#h-scrollable', true)">&123;&123;num&125;&125;
 &lt;/ul>
 
-scrolled to: {{hid}}
+scrolled to: &123;&123;hid&125;&125;
 &lt;div id="h-scrollable" class="scrollable section horizontal"
      ng2-scrollable
      [horizontal]="true"
@@ -157,48 +157,48 @@ scrolled to: {{hid}}
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import { Component } from '@angular/core';
-import { Ng2ScrollableDirective } from 'ng2-ui';
+>import &123; Component &125; from '@angular/core';
+import &123; Ng2ScrollableDirective &125; from 'ng2-ui';
 
-@Component({
+@Component(&123;
   templateUr: 'app.html'
-})
-export class AppComponent{
+&125;)
+export class AppComponent&123;
   hid: string = 'h1';
-  scrollTo(selector, parentSelector, horizontal) {
+  scrollTo(selector, parentSelector, horizontal) &123;
     Ng2ScrollableDirective.scrollTo(
       selector,       // scroll to this
       parentSelector, // scroll within (null if window scrolling)
       horizontal,     // is it horizontal scrolling
       10              // distance from top or left
     );
-  }
-}</code></pre>
+  &125;
+&125;</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet"
->ul {list-style: none}
-ul li {display: inline-block; border: 1px solid #999; padding: 10px; cursor: pointer;}
-ul li.current { background: #333; color: #fff}
-.scrollable { height: 200px; border: 1px solid #999; position: relative;}
-.scrollable > div {height: 110px}
-.scrollable > div:nth-child(odd) { background-color: #ccc}
-.scrollable.section {overflow:auto;}
+>ul &123;list-style: none&125;
+ul li &123;display: inline-block; border: 1px solid #999; padding: 10px; cursor: pointer;&125;
+ul li.current &123; background: #333; color: #fff&125;
+.scrollable &123; height: 200px; border: 1px solid #999; position: relative;&125;
+.scrollable > div &123;height: 110px&125;
+.scrollable > div:nth-child(odd) &123; background-color: #ccc&125;
+.scrollable.section &123;overflow:auto;&125;
 
-.horizontal {
+.horizontal &123;
   height: 100px;
   width: 100%;
   max-width: 450px;
   white-space: nowrap;
   overflow-y: hidden !important;
-}
-.horizontal > div {
+&125;
+.horizontal > div &123;
   border: 1px solid #666;
   width: 200px;
   height: 80px;
   display: inline-block;
   text-align: center;
-}</code></pre>
+&125;</code></pre>
            </div>
          </div>
       </ng2-tab>

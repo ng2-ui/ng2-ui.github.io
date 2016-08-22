@@ -5,8 +5,7 @@ import { Ng2PopupComponent, Ng2MessagePopupComponent } from 'ng2-ui';
   template: `
     <p>This is custom popup</p>
     {{number}} <button (click)="number = number+1">increase number</button><br/>
-    <button (click)="popup.close()">close</button>
-  `
+    <button (click)="popup.close()">close</button>`
 })
 class CustomPopupComponent {
   number: number = 0;
@@ -45,30 +44,30 @@ class CustomPopupComponent {
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import {Component, ViewChild} from '@angular/core';
-import { Ng2PopupComponent, Ng2MessagePopupComponent } from 'ng2-ui';
+>import &123;Component, ViewChild&125; from '@angular/core';
+import &123; Ng2PopupComponent, Ng2MessagePopupComponent &125; from 'ng2-ui';
 
-export class popupcomponent {
+export class popupcomponent &123;
   @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
   message: string;
 
-  openPopup(size, title) {
-    this.popup.open(Ng2MessagePopupComponent, {
+  openPopup(size, title) &123;
+    this.popup.open(Ng2MessagePopupComponent, &123;
       classNames: size,
       title: title,
       message: "This is message given using popup.open()",
-      buttons: {
-        OK: () => {
+      buttons: &123;
+        OK: () => &123;
           this.message = "Ok button is pressed";
-        },
-        CANCEL: () => {
+        &125;,
+        CANCEL: () => &123;
           this.message = "Cancel button is pressed";
           this.popup.close();
-        }
-      }
-    });
-  }
-}</code></pre>
+        &125;
+      &125;
+    &125;);
+  &125;
+&125;</code></pre>
           </div>
          </div>
       </ng2-tab>
@@ -91,31 +90,31 @@ export class popupcomponent {
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import {Component, ViewChild} from '@angular/core';
-import { Ng2PopupComponent } from 'ng2-ui';
+>import &123;Component, ViewChild&125; from '@angular/core';
+import &123; Ng2PopupComponent &125; from 'ng2-ui';
 
-@Component({
+@Component(&123;
   template: \`
   &lt;p>This is custom popup&lt;/p>
-  \\{\\{number\\}\\} &lt;button (click)="number = number+1">increase number&lt;/button>&lt;br/>
+  \\&123;\\&123;number\\&125;\\&125; &lt;button (click)="number = number+1">increase number&lt;/button>&lt;br/>
   &lt;button (click)="popup.close()">close&lt;/button>
   \`
-})
-class CustomPopupComponent {
+&125;)
+class CustomPopupComponent &123;
   number: number = 0;
-}
+&125;
 
-export class popupcomponent {
+export class popupcomponent &123;
   @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
   message: string;
 
-  openCustomPopup() {
-    this.popup.open(CustomPopupComponent, {
+  openCustomPopup() &123;
+    this.popup.open(CustomPopupComponent, &123;
       classNames: 'custom',
       closeButton: false
-    });
-  }
-}</code></pre>
+    &125;);
+  &125;
+&125;</code></pre>
           </div>
          </div>
       </ng2-tab>

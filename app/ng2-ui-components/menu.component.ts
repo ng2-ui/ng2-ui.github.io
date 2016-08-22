@@ -69,20 +69,20 @@ import { Component } from '@angular/core';
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import { Component } from '@angular/core';
+>import &123; Component &125; from '@angular/core';
 
-@Component({
+@Component(&123;
   templateUr: 'app.html',
   styleUrls: ['app.css']
-})
-export class AppComponent{
-}</code></pre>
+&125;)
+export class AppComponent&123;
+&125;</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet"
 >ul.horizontal-menu,
 .has-ng2-menu ul[ng2-menu]
-{
+&123;
   background: #3db2e1;
   background: -moz-linear-gradient(top, #69c4e8, #21a1d4);
   background: -ms-linear-gradient(top, #69c4e8, #21a1d4);
@@ -94,8 +94,8 @@ export class AppComponent{
   display: inline-block;
   font-family: 'Open Sans', Helvetica, sans-serif;
   width: auto;
-}
-ul.horizontal-menu > li {
+&125;
+ul.horizontal-menu > li &123;
   -moz-transition: color .2s ease;
   -ms-transition: color .2s ease;
   -o-transition: color .2s ease;
@@ -110,24 +110,24 @@ ul.horizontal-menu > li {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   text-transform: uppercase;
   transition: color .2s ease;
-}
+&125;
 ul.horizontal-menu > li:hover,
-.has-ng2-menu li:hover {
+.has-ng2-menu li:hover &123;
   color: #ccc;
-}
+&125;
 ul.horizontal-menu > li:hover ul,
-.has-ng2-menu li:hover ul {
+.has-ng2-menu li:hover ul &123;
   color: #fff;
-}
+&125;
 
-.dropdown-menu, .right-side-menu, .bottom-menu {
+.dropdown-menu, .right-side-menu, .bottom-menu &123;
   display: inline-block;
-}
+&125;
 
-.has-ng2-menu.active {
+.has-ng2-menu.active &123;
   color: #fff;
-}
-.has-ng2-menu::after {
+&125;
+.has-ng2-menu::after &123;
   content: '\25bc';
   display: inline-block;
   padding: 6px 12px;
@@ -135,27 +135,27 @@ ul.horizontal-menu > li:hover ul,
   float: right;
   font-size: 8px;
   line-height: 13px;
-}
-.has-ng2-menu.active::after {
+&125;
+.has-ng2-menu.active::after &123;
   color: #333;
-}
+&125;
 
-.has-ng2-menu ul[ng2-menu] {
+.has-ng2-menu ul[ng2-menu] &123;
   background-color: #fff;
   display: none;
   list-style: none;
   margin: 0;
   padding: 0
-}
-.has-ng2-menu.active > ul[ng2-menu] {
+&125;
+.has-ng2-menu.active > ul[ng2-menu] &123;
   display: inline-block;
-}
-.has-ng2-menu > ul[ng2-menu] > li {
+&125;
+.has-ng2-menu > ul[ng2-menu] > li &123;
   display: block;
   margin: 0;
   padding: 10px;
   white-space: nowrap;
-}
+&125;
 
 </code></pre>
            </div>
@@ -225,14 +225,14 @@ ul.horizontal-menu > li:hover ul,
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import { Component } from '@angular/core';
+>import &123; Component &125; from '@angular/core';
 
-@Component({
+@Component(&123;
   templateUr: 'app.html',
   styleUrls: ['app.css']
-})
-export class AppComponent{
-}</code></pre>
+&125;)
+export class AppComponent&123;
+&125;</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet">
@@ -301,14 +301,14 @@ The same as the above. .... Omitted Intentionally
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import { Component } from '@angular/core';
+>import &123; Component &125; from '@angular/core';
 
-@Component({
+@Component(&123;
   templateUr: 'app.html',
   styleUrls: ['app.css']
-})
-export class AppComponent{
-}</code></pre>
+&125;)
+export class AppComponent&123;
+&125;</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet">
