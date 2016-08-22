@@ -2,10 +2,13 @@
 
   var map = {
     app: "app",
-    '@angular': '../node_modules/@angular',
-    'rxjs': '../node_modules/rxjs',
-    'ng2-ui': '../node_modules/ng2-ui/dist'
+    '@angular':  'https://npmcdn.com/@angular', // sufficient if we didn't pin the version
+    'rxjs':      'https://npmcdn.com/rxjs@5.0.0-beta.6',
+    'ts':        'https://npmcdn.com/plugin-typescript@4.0.10/lib/plugin.js',
+    'typescript': 'https://npmcdn.com/typescript@1.9.0-dev.20160409/lib/typescript.js',
+    'ng2-ui':     'https://npmcdn.com/ng2-ui/dist'
   };
+
   var packages = {
     app: { main: './main.ts', defaultExtension: 'ts' },
     '@angular/common': { main: 'bundles/common.umd.js', defaultExtension: 'js' },
@@ -74,8 +77,14 @@
 
   System.config({
     transpiler: 'ts',
-    typescriptOptions: {      //typescript compiler options
+    typescriptOptions: {
+      experimentalDecorators: true,
       emitDecoratorMetadata: true
+    },
+    meta: {
+      'typescript': {
+        "exports": "ts"
+      }
     },
     map: map,
     packages: packages
