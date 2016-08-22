@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import { NG2_DIRECTIVES, OverlayManager } from 'ng2-ui';
+import {  OverlayManager } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
-  providers: [ OverlayManager ],
   template: `
     <div class="container page-title">
       <h1>Overlay</h1>
@@ -32,8 +30,7 @@ import { NG2_DIRECTIVES, OverlayManager } from 'ng2-ui';
     </div>`
 })
 export class OverlayComponent{
-  constructor(public overlayManager: OverlayManager) {
-  }
+  constructor(public overlayManager: OverlayManager) {}
 
   ngAfterViewInit(): void {
     window.scroll(0,0);

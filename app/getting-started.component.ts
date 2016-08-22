@@ -16,17 +16,17 @@ import { Component } from '@angular/core';
   
   <h2>systemjs.config.js</h2>
   <pre><code class="language-javascript">
-map: {
+map: {{ '{' }}
   app: "app",
   ...
   'ng2-ui': 'https://npmcdn.com/ng2-ui' // <----- this
-},
+{{ '}' }},
 
-packages: {
-   app: {main: './main.js', defaultExtension: 'js'},
+packages: {{ '{' }}
+   app: {{ '{' }}main: './main.js', defaultExtension: 'js'{{ '}' }},
    ...
-   'ng2-ui': { main: 'dist/index.js', defaultExtension: 'js' }  // <----- this
-   }
+   'ng2-ui': {{ '{' }} main: 'dist/index.js', defaultExtension: 'js' {{ '}' }}  // <----- this
+   {{ '}' }}
 }</code></pre>
       
   <h2>Usage</h2>
@@ -34,16 +34,14 @@ packages: {
   <p>app.component.ts
   <pre><code class="language-javascript">
 //our root app component
-import {Component, enableProdMode} from '@angular/core'
-import { NG2_DIRECTIVES } from "ng2-ui";   // <---- this
+import {{ '{' }}Component, enableProdMode{{ '}' }} from '@angular/core'
 enableProdMode();
 
-@Component({
+@Component({{ '{' }}
   selector: 'my-app',
   templateUrl: 'src/app.tpl.html',
-  directives: [ NG2_DIRECTIVES ]    // <---- this
-})
-export class AppComponent { ... }
+{{ '}' }})
+export class AppComponent {{ '{' }} ... {{ '}' }}
 </code></pre>
 
 <p><b>src/app.tpl.html</b></p>

@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   template: `
     <div class="container page-title" xmlns="http://www.w3.org/1999/html">
       <h1>Infinite List</h1>
@@ -39,10 +37,8 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
            <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [NG2_DIRECTIVES],
   templates: 'app.tpl.html'
 })  
 export class AppComponent {
@@ -109,10 +105,8 @@ export class AppComponent {
            <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [NG2_DIRECTIVES],
   templates: 'app.tpl.html'
 })  
 export class AppComponent {

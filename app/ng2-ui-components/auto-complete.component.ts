@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   template: `
     <div class="container page-title">
       <h1>Auto Complete</h1>
@@ -32,10 +30,8 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
              <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html'
 })
 export class AppComponent{
@@ -72,10 +68,8 @@ export class AppComponent{
              <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html'
 })
 export class AppComponent{
@@ -116,10 +110,8 @@ export class AppComponent{
              <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html'
 })
 export class AppComponent{
@@ -165,10 +157,8 @@ export class AppComponent{
              <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html'
 })
 export class AppComponent{

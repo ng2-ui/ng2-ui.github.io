@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
-console.log('NG2_DIRECTIVES', NG2_DIRECTIVES);
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   template: `
     <div class="container page-title">
       <h1>Sticky</h1>
@@ -35,10 +32,8 @@ console.log('NG2_DIRECTIVES', NG2_DIRECTIVES);
           <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html'
 })
 export class AppComponent{
@@ -92,10 +87,8 @@ div[ng2-sticky] {
           <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html'
 })
 export class AppComponent{
@@ -155,10 +148,8 @@ div[ng2-sticky] {
           <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html'
 })
 export class AppComponent{

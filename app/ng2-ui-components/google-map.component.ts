@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   template: `
     <div class="container page-title" xmlns="http://www.w3.org/1999/html">
       <h1>Google Map</h1>
@@ -31,10 +29,8 @@ import { NG2_DIRECTIVES } from 'ng2-ui';
           <div *ngIf="tab3===2">
             <pre><code class="language-markup"
             >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUrl: 'app.html'
 })
 class AppCompoment {
@@ -70,10 +66,8 @@ class AppCompoment {
           <div *ngIf="tab4===2">
             <pre><code class="language-markup"
             >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUrl: 'app.html'
 })
 class AppCompoment {}</code></pre>
@@ -100,10 +94,8 @@ class AppCompoment {}</code></pre>
           <div *ngIf="tab1===2">
             <pre><code class="language-markup"
             >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUrl: 'app.html'
 })
 class AppCompoment {
@@ -135,10 +127,8 @@ class AppCompoment {
           <div id="javascript" *ngIf="tab2===2">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUrl: 'app.html'
 })
 class AppCompoment {

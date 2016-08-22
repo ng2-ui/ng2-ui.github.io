@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
-import { NG2_DIRECTIVES, NG2_PROVIDERS } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
-  providers: [ NG2_PROVIDERS ],
   template: `
     <div class="container page-title">
       <h1>Tooltip</h1>
@@ -42,11 +39,8 @@ import { NG2_DIRECTIVES, NG2_PROVIDERS } from 'ng2-ui';
           <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES, NG2_PROVIDERS } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
-  providers: [ NG2_PROVIDERS ],
   templateUr: 'app.html'
 })
 export class AppComponent{

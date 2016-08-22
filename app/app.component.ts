@@ -1,24 +1,11 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
-import { ROUTER_DIRECTIVES, Router, NavigationEnd }  from '@angular/router';
-import { NG2_DIRECTIVES, Ng2MapComponent } from 'ng2-ui';
-
-import { HTTP_PROVIDERS } from "@angular/http";
-import { DrawerComponent } from "./drawer.component";
-import { RepoInfoComponent } from "./repo-info.component";
-import { HttpCache } from './http-cache';
-import { Ng2Storage } from "./ng2-storage";
+import { Router, NavigationEnd }  from '@angular/router';
+import { Ng2MapComponent } from "ng2-ui";
 
 @Component({
   selector: 'my-app',
-  templateUrl: './app.html',
-  providers: [HTTP_PROVIDERS,  HttpCache, Ng2Storage],
-  directives: [
-    ROUTER_DIRECTIVES,
-    NG2_DIRECTIVES,
-    DrawerComponent,
-    RepoInfoComponent
-  ]
+  templateUrl: './app.html'
 })
 export class AppComponent {
   private currentRoute:string;

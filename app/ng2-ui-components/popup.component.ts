@@ -1,5 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
-import { NG2_DIRECTIVES, Ng2PopupComponent, Ng2MessagePopupComponent } from 'ng2-ui';
+import { Ng2PopupComponent, Ng2MessagePopupComponent } from 'ng2-ui';
 
 @Component({
   template: `
@@ -13,7 +13,6 @@ class CustomPopupComponent {
 }
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   template: `
     <div class="container page-title">
       <h1>Popup</h1>
@@ -47,7 +46,7 @@ class CustomPopupComponent {
           <div contents="js">
 <pre><code class="language-javascript"
 >import {Component, ViewChild} from '@angular/core';
-import { NG2_DIRECTIVES, Ng2PopupComponent, Ng2MessagePopupComponent } from 'ng2-ui';
+import { Ng2PopupComponent, Ng2MessagePopupComponent } from 'ng2-ui';
 
 export class popupcomponent {
   @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
@@ -93,7 +92,7 @@ export class popupcomponent {
           <div contents="js">
 <pre><code class="language-javascript"
 >import {Component, ViewChild} from '@angular/core';
-import { NG2_DIRECTIVES, Ng2PopupComponent } from 'ng2-ui';
+import { Ng2PopupComponent } from 'ng2-ui';
 
 @Component({
   template: \`

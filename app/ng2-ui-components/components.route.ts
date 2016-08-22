@@ -1,4 +1,4 @@
-import { RouterConfig }          from '@angular/router';
+import { Routes } from '@angular/router';
 
 import {AccordionComponent} from "./accordion.component";
 import {DatetimePickerComponent} from "./datetime-picker.component";
@@ -14,7 +14,7 @@ import {TooltipComponent} from "./tooltip.component";
 import {AutoCompleteComponent} from "./auto-complete.component";
 import {MenuComponent} from "./menu.component";
 
-export const ComponentsRoutes: RouterConfig = [
+export const ComponentsRoutes: Routes = [
   {path: 'auto-complete', component: AutoCompleteComponent},
   {path: 'datetime-picker', component: DatetimePickerComponent},
   {path: 'google-map', component: GoogleMapComponent},

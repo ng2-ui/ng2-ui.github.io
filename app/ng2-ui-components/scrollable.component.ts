@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { NG2_DIRECTIVES, Ng2ScrollableDirective } from 'ng2-ui';
+import { Ng2ScrollableDirective } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   template: `
     <div class="container page-title">
       <h1>Scrollable</h1>
@@ -64,10 +63,9 @@ scrolled to: {{id}}
           <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES, Ng2ScrollableDirective } from 'ng2-ui';
+import { Ng2ScrollableDirective } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html'
 })
 export class AppComponent{
@@ -160,10 +158,9 @@ scrolled to: {{hid}}
           <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES, Ng2ScrollableDirective } from 'ng2-ui';
+import { Ng2ScrollableDirective } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html'
 })
 export class AppComponent{
@@ -269,7 +266,7 @@ export class ScrollableComponent {
   id: string = 's1';
   hid: string = 'h1';
   wid: string = 'w1';
-  scrollTo(selector, parentSelector, horizontal) {
+  scrollTo(selector: string, parentSelector: string, horizontal: boolean) {
     Ng2ScrollableDirective.scrollTo(
       selector,       // scroll to this
       parentSelector, // scroll within (null if window scrolling)

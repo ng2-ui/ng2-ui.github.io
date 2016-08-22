@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
-import { NG2_DIRECTIVES, NG2_PROVIDERS } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
-  providers: [ NG2_PROVIDERS ],
   template: `
     <div class="container page-title">
       <h1>Menu</h1>
@@ -73,10 +70,8 @@ import { NG2_DIRECTIVES, NG2_PROVIDERS } from 'ng2-ui';
           <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html',
   styleUrls: ['app.css']
 })
@@ -231,10 +226,8 @@ ul.horizontal-menu > li:hover ul,
           <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html',
   styleUrls: ['app.css']
 })
@@ -309,10 +302,8 @@ The same as the above. .... Omitted Intentionally
           <div contents="js">
 <pre><code class="language-javascript"
 >import { Component } from '@angular/core';
-import { NG2_DIRECTIVES } from 'ng2-ui';
 
 @Component({
-  directives: [ NG2_DIRECTIVES ],
   templateUr: 'app.html',
   styleUrls: ['app.css']
 })
