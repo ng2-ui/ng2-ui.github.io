@@ -25,6 +25,7 @@ import {StickyComponent} from "./ng2-ui-components/sticky.component";
 import {TabComponent} from "./ng2-ui-components/tab.component";
 import {TooltipComponent} from "./ng2-ui-components/tooltip.component";
 import {AutoCompleteComponent} from "./ng2-ui-components/auto-complete.component";
+import {SortableComponent} from "./ng2-ui-components/sortable.component";
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import {AutoCompleteComponent} from "./ng2-ui-components/auto-complete.component
     ScrollableComponent,
     StickyComponent,
     TabComponent,
-    TooltipComponent
+    TooltipComponent,
+    SortableComponent
   ],
   providers: [
     HttpCache,

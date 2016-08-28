@@ -21,6 +21,7 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/parallax">Parallax Scroll</a>
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/popup">Popup</a>
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/scrollable">Scrollable</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/sortable">Sortable</a>
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/sticky">Sticky Section</a>
         </ul>
       <li class="menu-item"><a href="https://github.com/ng2-ui/ng2-ui/issues">Help</a>

@@ -13,6 +13,7 @@ import {TabComponent} from "./tab.component";
 import {TooltipComponent} from "./tooltip.component";
 import {AutoCompleteComponent} from "./auto-complete.component";
 import {MenuComponent} from "./menu.component";
+import {SortableComponent} from "./sortable.component";
 
 export const ComponentsRoutes: Routes = [
   {path: 'auto-complete', component: AutoCompleteComponent},
@@ -27,5 +28,6 @@ export const ComponentsRoutes: Routes = [
   {path: 'parallax', component: ParallaxScrollComponent},
   {path: 'popup', component: PopupComponent},
   {path: 'scrollable', component: ScrollableComponent},
-  {path: 'sticky', component: StickyComponent} 
+  {path: 'sticky', component: StickyComponent},
+  {path: 'sortable', component: SortableComponent}
 ];
