@@ -130,6 +130,7 @@ export class RepoInfoComponent {
       case '/parallax':        return 'https://api.github.com/repos/ng2-ui/ng2-parallax-scroll';
       case '/popup':           return 'https://api.github.com/repos/ng2-ui/ng2-popup';
       case '/scrollable':      return 'https://api.github.com/repos/ng2-ui/ng2-scrollable';
+      case '/sortable':        return 'https://api.github.com/repos/ng2-ui/ng2-ui-sortable';
       case '/sticky':          return 'https://api.github.com/repos/ng2-ui/ng2-sticky';
       default: return 'https://api.github.com/repos/ng2-ui/ng2-ui';
     }
