@@ -6,7 +6,7 @@
     'rxjs':      'https://npmcdn.com/rxjs@5.0.0-beta.6',
     'ts':        'https://npmcdn.com/plugin-typescript@4.0.10/lib/plugin.js',
     'typescript': 'https://npmcdn.com/typescript@1.9.0-dev.20160409/lib/typescript.js',
-    'ng2-ui':     'https://npmcdn.com/ng2-ui@0.10.0/dist'
+    'ng2-ui':     'ng2-ui/dist'
   };
 
   var packages = {
