@@ -3,7 +3,6 @@ import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from "@angular/forms";
 import { HttpModule } from "@angular/http";
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { Ng2UIModule }    from 'ng2-ui';
 
 import { AppComponent }   from './app.component';
 import { DrawerComponent } from "./drawer.component";
@@ -26,10 +25,17 @@ import {TabComponent} from "./ng2-ui-components/tab.component";
 import {TooltipComponent} from "./ng2-ui-components/tooltip.component";
 import {AutoCompleteComponent} from "./ng2-ui-components/auto-complete.component";
 import {SortableComponent} from "./ng2-ui-components/sortable.component";
+import {Ng2UIModule} from 'ng2-ui';
 
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, HttpModule, APP_ROUTER_PROVIDERS, Ng2UIModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    Ng2UIModule,
+    APP_ROUTER_PROVIDERS
+  ],
   declarations: [
     AppComponent,
     DrawerComponent,

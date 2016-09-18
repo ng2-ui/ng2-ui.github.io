@@ -1,9 +1,7 @@
 import {Component} from "@angular/core";
-import {ROUTER_DIRECTIVES} from "@angular/router";
 
 @Component({
   selector: 'drawer-component',
-  directives: [ROUTER_DIRECTIVES],
   template: `
     <ul class="menu">
       <li class="menu-item" routerLinkActive="selected"><a routerLink="/getting-started">Getting Started</a>
