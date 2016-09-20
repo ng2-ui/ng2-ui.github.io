@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
 map: {{ '{' }}
   app: "app",
   ...
-  'ng2-ui': 'https://npmcdn.com/ng2-ui' // <----- this
+  'ng2-ui': 'https://unpkg.com/ng2-ui' // <----- this
 {{ '}' }},
 
 packages: {{ '{' }}
