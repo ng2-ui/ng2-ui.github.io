@@ -1,13 +1,13 @@
 {
   "name": "ng2-ui.github.io",
-  "version": "0.5.o",
+  "version": "0.5.1",
   "description": "Ng2 UI Web Page",
   "main": "index.html",
   "scripts": {
-    "clean": "rimraf node_modules doc dist && npm cache clean",
+    "clean": "rimraf node_modules doc && npm cache clean",
     "clean-install": "npm run clean && npm install",
     "clean-start": "npm run clean-install && npm start",
-    "build": "rimraf dist && webpack --progress --profile --bail",
+    "build": "webpack --progress --profile --bail",
     "webdriver-update": "webdriver-manager update",
     "webdriver-start": "webdriver-manager start",
     "lint": "tslint --force \"src/**/*.ts\"",
