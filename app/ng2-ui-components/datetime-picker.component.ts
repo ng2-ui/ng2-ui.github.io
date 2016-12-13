@@ -50,7 +50,7 @@ export class AppComponent{{ '{' }}
          <div class="tab-contents">
            <div contents="html">
 <pre><code class="language-markup"
->&lt;input [(ngModel)]="date1" ng2-datetime-picker
+>&lt;input [(ngModel)]="date1"  ng2-datetime-picker
        date-only="true" /&gt;</code></pre>
            </div>
            <div contents="js">
@@ -182,8 +182,6 @@ export class AppComponent{{ '{' }}
     </div>`
 })
 export class DatetimePickerComponent {
-  date1 = new Date("2015-01-01");
-  date2 = new Date("Thu Jan 01 2015 00:00:00 GMT-0500 (EST)");
   date3 = '2015-01-01T00:00:00-0400';
   date4 = '2015-01-01';
   gmtDate = '2015-01-01T00:00:00.000Z';
