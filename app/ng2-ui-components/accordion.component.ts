@@ -33,10 +33,10 @@ import { Component } from '@angular/core';
   selected-index-class="selected"
   selected-contents-class="selected">
   &lt;div index="html">HTML&lt;/div>
-  &lt;div contents="html">HTML &123;&123;foo&125;&125;&lt;/div>
+  &lt;div contents="html">HTML {{ '{{' }}foo&125;&125;&lt;/div>
   
   &lt;div index="js">Javascript&lt;/div>
-  &lt;div contents="js">Javascript &123;&123;bar&125;&125;&lt;/div>
+  &lt;div contents="js">Javascript {{ '{{' }}bar&125;&125;&lt;/div>
   
   &lt;div index="css">Css&lt;/div>
   &lt;div contents="css">Style Sheet&lt;/div>

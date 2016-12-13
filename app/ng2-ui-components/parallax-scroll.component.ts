@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
       <h1>Parallax Scroll</h1>
     </div>
     <div class="container">
-      <div style="height: 400px"> 
+      <div> 
         <p>
           <b>Parallax scrolling</b> is a scrolling technique used computer graphics
           in which background images move more slowly than images in the foreground, 
@@ -36,13 +36,13 @@ import { Component } from '@angular/core';
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
-&125;</code></pre>
+{{ '}' }})
+export class AppComponent{{ '{' }}
+{{ '}' }}</code></pre>
           </div>
          </div>
       </ng2-tab>

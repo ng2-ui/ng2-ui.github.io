@@ -28,13 +28,13 @@ import { Component } from '@angular/core';
           </div>
           <div contents="js">
 <pre><code class="langage-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
-&125;</code></pre>
+{{ '}' }})
+export class AppComponent{{ '{' }}
+{{ '}' }}</code></pre>
           </div>
         </div>
       </div>
@@ -67,13 +67,13 @@ export class AppComponent&123;
           </div>
           <div contents="js">
 <pre><code class="langage-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
-&125;</code></pre>
+{{ '}' }})
+export class AppComponent{{ '{' }}
+{{ '}' }}</code></pre>
         </div>
         </div>
       </ng2-tab> 

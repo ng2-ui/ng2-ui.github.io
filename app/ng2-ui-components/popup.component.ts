@@ -44,30 +44,30 @@ class CustomPopupComponent {
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import &123;Component, ViewChild&125; from '@angular/core';
-import &123; Ng2PopupComponent, Ng2MessagePopupComponent &125; from 'ng2-ui';
+>import {{ '{' }}Component, ViewChild{{ '}' }} from '@angular/core';
+import {{ '{' }} Ng2PopupComponent, Ng2MessagePopupComponent {{ '}' }} from 'ng2-ui';
 
-export class popupcomponent &123;
+export class popupcomponent {{ '{' }}
   @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
   message: string;
 
-  openPopup(size, title) &123;
-    this.popup.open(Ng2MessagePopupComponent, &123;
+  openPopup(size, title) {{ '{' }}
+    this.popup.open(Ng2MessagePopupComponent, {{ '{' }}
       classNames: size,
       title: title,
       message: "This is message given using popup.open()",
-      buttons: &123;
-        OK: () => &123;
+      buttons: {{ '{' }}
+        OK: () => {{ '{' }}
           this.message = "Ok button is pressed";
-        &125;,
-        CANCEL: () => &123;
+        {{ '}' }},
+        CANCEL: () => {{ '{' }}
           this.message = "Cancel button is pressed";
           this.popup.close();
-        &125;
-      &125;
-    &125;);
-  &125;
-&125;</code></pre>
+        {{ '}' }}
+      {{ '}' }}
+    {{ '}' }});
+  {{ '}' }}
+{{ '}' }}</code></pre>
           </div>
          </div>
       </ng2-tab>
@@ -90,31 +90,31 @@ export class popupcomponent &123;
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import &123;Component, ViewChild&125; from '@angular/core';
-import &123; Ng2PopupComponent &125; from 'ng2-ui';
+>import {{ '{' }}Component, ViewChild{{ '}' }} from '@angular/core';
+import {{ '{' }} Ng2PopupComponent {{ '}' }} from 'ng2-ui';
 
-@Component(&123;
+@Component({{ '{' }}
   template: \`
   &lt;p>This is custom popup&lt;/p>
-  \\&123;\\&123;number\\&125;\\&125; &lt;button (click)="number = number+1">increase number&lt;/button>&lt;br/>
+  {{ '{' }}{{ '{' }}number{{ '}' }}{{ '}' }} &lt;button (click)="number = number+1">increase number&lt;/button>&lt;br/>
   &lt;button (click)="popup.close()">close&lt;/button>
   \`
-&125;)
-class CustomPopupComponent &123;
+{{ '}' }})
+class CustomPopupComponent {{ '{' }}
   number: number = 0;
-&125;
+{{ '}' }}
 
-export class popupcomponent &123;
+export class popupcomponent {{ '{' }}
   @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
   message: string;
 
-  openCustomPopup() &123;
-    this.popup.open(CustomPopupComponent, &123;
+  openCustomPopup() {{ '{' }}
+    this.popup.open(CustomPopupComponent, {{ '{' }}
       classNames: 'custom',
       closeButton: false
-    &125;);
-  &125;
-&125;</code></pre>
+    {{ '}' }});
+  {{ '}' }}
+{{ '}' }}</code></pre>
           </div>
          </div>
       </ng2-tab>

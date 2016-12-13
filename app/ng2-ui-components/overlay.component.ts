@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {  OverlayManager } from 'ng2-ui';
+import { Ng2OverlayManager } from 'ng2-ui';
 
 @Component({
   template: `
@@ -30,7 +30,7 @@ import {  OverlayManager } from 'ng2-ui';
     </div>`
 })
 export class OverlayComponent{
-  constructor(public overlayManager: OverlayManager) {}
+  constructor(public overlayManager: Ng2OverlayManager) {}
 
   ngAfterViewInit(): void {
     window.scroll(0,0);

@@ -38,25 +38,25 @@ import { Component } from '@angular/core';
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
-&125;</code></pre>
+{{ '}' }})
+export class AppComponent{{ '{' }}
+{{ '}' }}</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-css"
->[ng2-tooltip] &123;margin: 40px; border: 1px solid #ccc &125;
+>[ng2-tooltip] {{ '{' }}margin: 40px; border: 1px solid #ccc {{ '}' }}
 
-[ng2-tooltip] .tooltip-contents &123;
+[ng2-tooltip] .tooltip-contents {{ '{' }}
   border: 1px solid #ccc; padding: 5px
-&125;
-[ng2-tooltip] .tooltip-down-arrow &123;
+{{ '}' }}
+[ng2-tooltip] .tooltip-down-arrow {{ '{' }}
   height: 10px;
-&125;
-[ng2-tooltip] .tooltip-down-arrow:before &123;
+{{ '}' }}
+[ng2-tooltip] .tooltip-down-arrow:before {{ '{' }}
   content: '';
   display: block;
   position: absolute;
@@ -68,7 +68,7 @@ export class AppComponent&123;
   border-left:1px solid #ccc;
   border-bottom:1px solid #ccc;
   transform:rotate(-45deg);
-&125;</code></pre>
+{{ '}' }}</code></pre>
           </div>
         </div>
       </ng2-tab>

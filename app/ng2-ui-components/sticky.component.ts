@@ -31,33 +31,33 @@ import { Component } from '@angular/core';
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
-&125;</code></pre>
+{{ '}' }})
+export class AppComponent{{ '{' }}
+{{ '}' }}</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet"
->.sticky-container > div &123;
+>.sticky-container > div {{ '{' }}
   border: 1px solid #333;
   background-image: linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
   background-size: 50px 50px;
   height: 300px;
-&125;
-.sticky-float-right &123;
+{{ '}' }}
+.sticky-float-right {{ '{' }}
   background-color: rgba(0,255,0, .2);
-&125;
-div[ng2-sticky] &123;
+{{ '}' }}
+div[ng2-sticky] {{ '{' }}
   min-width: 400px;
   text-align: center;
   background: #333;
   color: #fff;
   border: 1px solid #333;
   padding: 10px;
-&125;</code></pre>
+{{ '}' }}</code></pre>
            </div>
          </div>
       </ng2-tab>
@@ -86,33 +86,33 @@ div[ng2-sticky] &123;
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
-&125;</code></pre>
+{{ '}' }})
+export class AppComponent{{ '{' }}
+{{ '}' }}</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet"
->.sticky-container > div &123;
+>.sticky-container > div {{ '{' }}
   border: 1px solid #333;
   background-image: linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
   background-size: 50px 50px;
   height: 300px;
-&125;
-.sticky-float-left &123;
+{{ '}' }}
+.sticky-float-left {{ '{' }}
   background-color: rgba(255,0,0, .2);
-&125;
-div[ng2-sticky] &123;
+{{ '}' }}
+div[ng2-sticky] {{ '{' }}
   min-width: 400px;
   text-align: center;
   background: #333;
   color: #fff;
   border: 1px solid #333;
   padding: 10px;
-&125;
+{{ '}' }}
 </code></pre>
            </div>
          </div>
@@ -147,36 +147,36 @@ div[ng2-sticky] &123;
           </div>
           <div contents="js">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
-&125;</code></pre>
+{{ '}' }})
+export class AppComponent{{ '{' }}
+{{ '}' }}</code></pre>
           </div>
           <div contents="css">
 <pre><code class="language-stylesheet"
->.sticky-container > div &123;
+>.sticky-container > div {{ '{' }}
   border: 1px solid #333;
   background-image: linear-gradient(rgba(255, 255, 255, 1) 50%, transparent 50%, transparent);
   background-size: 50px 50px;
   height: 300px;
-&125;
-.div-middle &123;
+{{ '}' }}
+.div-middle {{ '{' }}
   background-color: rgba(0,0,255, .2);
-&125;
-div[ng2-sticky] &123;
+{{ '}' }}
+div[ng2-sticky] {{ '{' }}
   min-width: 400px;
   text-align: center;
   background: #333;
   color: #fff;
   border: 1px solid #333;
   padding: 10px;
-&125;
-.div-middle div[ng2-sticky] &123;
+{{ '}' }}
+.div-middle div[ng2-sticky] {{ '{' }}
   margin: 0;
-&125;
+{{ '}' }}
 </code></pre>
            </div>
          </div>

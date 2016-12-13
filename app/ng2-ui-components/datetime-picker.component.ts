@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
       </p> 
     
       <div class="spacer x2"></div>
-      <p><b>myDate</b>: &123;&123;myDate&125;&125;</p>
+      <p><b>myDate</b>: {{myDate}}</p>
       <input [(ngModel)]="myDate" ng2-datetime-picker />
       <ng2-tab>
         <div class="tabs">
@@ -27,20 +27,20 @@ import { Component } from '@angular/core';
            </div>
            <div contents="js">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
+{{ '}' }})
+export class AppComponent{{ '{' }}
   myDate: string;
-&125;</code></pre>
+{{ '}' }}</code></pre>
            </div>
          </div>
       </ng2-tab>
         
       <div class="spacer x2"></div>
-      <p><b>date1</b>: &123;&123;date1&125;&125;</p>
+      <p><b>date1</b>: {{date1}}</p>
       <input [(ngModel)]="date1" ng2-datetime-picker date-only="true" />
       <ng2-tab>
         <div class="tabs">
@@ -55,20 +55,20 @@ export class AppComponent&123;
            </div>
            <div contents="js">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
+{{ '}' }})
+export class AppComponent{{ '{' }}
   date1 = new Date("2015-01-01");
-&125;</code></pre>
+{{ '}' }}</code></pre>
            </div>
          </div>
       </ng2-tab>
         
       <div class="spacer x2"></div>
-      <p><b>date2</b>: &123;&123;date2&125;&125;</p>
+      <p><b>date2</b>: date2{{ '}' }}{{ '}' }}</p>
       <input [(ngModel)]="date2" ng2-datetime-picker date-only="true" />
       <ng2-tab>
         <div class="tabs">
@@ -83,20 +83,20 @@ export class AppComponent&123;
            </div>
            <div contents="js">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
+{{ '}' }})
+export class AppComponent{{ '{' }}
   date2 = new Date("Thu Jan 01 2015 00:00:00 GMT-0500 (EST)");
-&125;</code></pre>
+{{ '}' }}</code></pre>
            </div>
          </div>
       </ng2-tab>
         
       <div class="spacer x2"></div>
-      <p><b>date3</b>: &123;&123;date3&125;&125;</p>
+      <p><b>date3</b>: {{date3}}</p>
       <input [(ngModel)]="date3" ng2-datetime-picker close-on-select="false" />
       <ng2-tab>
         <div class="tabs">
@@ -111,20 +111,20 @@ export class AppComponent&123;
            </div>
            <div contents="js">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
+{{ '}' }})
+export class AppComponent{{ '{' }}
   date3 = '2015-01-01T00:00:00-0400';
-&125;</code></pre>
+{{ '}' }}</code></pre>
            </div>
          </div>
       </ng2-tab>
         
       <div class="spacer x2"></div>
-      <p><b>date4</b>: &123;&123;date4&125;&125;</p>
+      <p><b>date4</b>: {{date4}}</p>
       <input [(ngModel)]="date4" ng2-datetime-picker hour="23" minute='59'/>
       <ng2-tab>
         <div class="tabs">
@@ -140,20 +140,20 @@ export class AppComponent&123;
            </div>
            <div contents="js">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
+{{ '}' }})
+export class AppComponent{{ '{' }}
   date4 = '2015-01-01';
-&125;</code></pre>
+{{ '}' }}</code></pre>
            </div>
          </div>
       </ng2-tab>
         
       <div class="spacer x2"></div>
-      <p><b>gmtDate</b>: &123;&123;gmtDate&125;&125;</p>
+      <p><b>gmtDate</b>: {{gmtDate}}</p>
       <input [(ngModel)]="gmtDate" ng2-datetime-picker />
       <ng2-tab>
         <div class="tabs">
@@ -167,14 +167,14 @@ export class AppComponent&123;
            </div>
            <div contents="js">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUr: 'app.html'
-&125;)
-export class AppComponent&123;
+{{ '}' }})
+export class AppComponent{{ '{' }}
   gmtDate = '2015-01-01T00:00:00.000Z';
-&125;</code></pre>
+{{ '}' }}</code></pre>
            </div>
          </div>
       </ng2-tab>

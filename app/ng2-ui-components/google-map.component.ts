@@ -28,25 +28,25 @@ import { Component } from '@angular/core';
           </div>
           <div *ngIf="tab3===2">
             <pre><code class="language-markup"
-            >import &123; Component &125; from '@angular/core';
+            >import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUrl: 'app.html'
-&125;)
-class AppCompoment &123;
+{{ '}' }})
+class AppCompoment {{ '{' }}
   public positions=[];
   
-  showRandomMarkers() &123;
+  showRandomMarkers() {{ '{' }}
     let randomLat: number, randomLng: number;
 
     this.positions = [];
-    for (let i=0; i<9; i++) &123;
+    for (let i=0; i<9; i++) {{ '{' }}
       randomLat = Math.random() * (43.7399 - 43.7300) + 43.7300;
       randomLng = Math.random() * (-79.7600 - -79.7699) + -79.7699;
       this.positions.push([randomLat, randomLng]);
-    &125;
-  &125;
-&125;</code></pre>
+    {{ '}' }}
+  {{ '}' }}
+{{ '}' }}</code></pre>
           </div>
         </div>
       </div>
@@ -65,12 +65,12 @@ class AppCompoment &123;
           </div>
           <div *ngIf="tab4===2">
             <pre><code class="language-markup"
-            >import &123; Component &125; from '@angular/core';
+            >import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUrl: 'app.html'
-&125;)
-class AppCompoment &123;&125;</code></pre>
+{{ '}' }})
+class AppCompoment {{ '{' }}{{ '}' }}</code></pre>
           </div>
         </div>
       </div>
@@ -93,16 +93,16 @@ class AppCompoment &123;&125;</code></pre>
           </div>
           <div *ngIf="tab1===2">
             <pre><code class="language-markup"
-            >import &123; Component &125; from '@angular/core';
+            >import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUrl: 'app.html'
-&125;)
-class AppCompoment &123;
-  log(marker, str) &123;
+{{ '}' }})
+class AppCompoment {{ '{' }}
+  log(marker, str) {{ '{' }}
     console.log('event .... >', marker, str);
-  &125;
-&125;</code></pre>
+  {{ '}' }}
+{{ '}' }}</code></pre>
           </div>
         </div>
       </div>
@@ -126,18 +126,18 @@ class AppCompoment &123;
           </div>
           <div id="javascript" *ngIf="tab2===2">
 <pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
+>import {{ '{' }} Component {{ '}' }} from '@angular/core';
 
-@Component(&123;
+@Component({{ '{' }}
   templateUrl: 'app.html'
-&125;)
-class AppCompoment &123;
-  clicked(marker) &123;
-    marker.map.mapComponent.openInfoWindow('iw', marker, &123;
+{{ '}' }})
+class AppCompoment {{ '{' }}
+  clicked(marker) {{ '{' }}
+    marker.map.mapComponent.openInfoWindow('iw', marker, {{ '{' }}
       lat: marker.getPosition().lat(), lng: marker.getPosition().lng()
-    &125;)
-  &125;
-&125;</code></pre>
+    {{ '}' }})
+  {{ '}' }}
+{{ '}' }}</code></pre>
           </div>
         </div>
       </div>
