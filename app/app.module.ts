@@ -25,7 +25,7 @@ import {TabComponent} from "./ng2-ui-components/tab.component";
 import {TooltipComponent} from "./ng2-ui-components/tooltip.component";
 import {AutoCompleteComponent} from "./ng2-ui-components/auto-complete.component";
 import {SortableComponent} from "./ng2-ui-components/sortable.component";
-import {Ng2UIModule} from 'ng2-ui';
+import {Ng2UIModule, Ng2MapModule} from 'ng2-ui';
 
 
 @NgModule({
@@ -33,8 +33,12 @@ import {Ng2UIModule} from 'ng2-ui';
     BrowserModule,
     FormsModule,
     HttpModule,
+    APP_ROUTER_PROVIDERS,
     Ng2UIModule,
-    APP_ROUTER_PROVIDERS
+    Ng2MapModule['forRoot']({
+      apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyCbMGRUwcqKjlYX4h4-P6t-xcDryRYLmCM' +
+      '&libraries=visualization,places,drawing',
+    })
   ],
   declarations: [
     AppComponent,
