@@ -1,0 +1,32 @@
+<header class="masthead">
+  <div class="container bg-blue border-0 w-980">
+    <a href="/" class="logo left text-white">
+      <img class="v-middle" src="https://avatars1.githubusercontent.com/u/20460529?v=3&s=32" />
+      <span>NG2-UI</span>
+    </a>
+    <repo-info class="masthead-nav right" numbers-section="1"></repo-info>
+    <!--<nav class="masthead-nav right">-->
+      <!--<a class="active" href="/scaffolding">Docs</a>-->
+      <!--<a href="/about">About</a>-->
+      <!--<a href="https://github.com/primer/primer" target="_blank">GitHub</a>-->
+      <!--<a href="https://github.com/primer/primer/blob/master/README.md#install" target="_blank">Install</a>-->
+    <!--</nav>-->
+  </div>
+</header>
+<div class="main container">
+  <div class="columns">
+    <div class="drawer one-fourth column">
+      <drawer-component class="drawer shadow-1"></drawer-component>
+      <repo-info contributors-section="1"></repo-info>
+    </div>
+    <div class="three-fourths column markdown-body">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <footer class="footer">
+    <div>
+      Copyright Allen Kim 2016, 2017.<br>
+      Created and maintained by Allen Kim.
+    </div>
+  </footer>
+</div>
