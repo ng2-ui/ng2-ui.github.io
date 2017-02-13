@@ -1,5 +1,5 @@
 ## For Developers
   
     $ npm install
-    $ rm -rf js/*
-    $ npm run build
+    $ npm start # to start the application
+    $ npm run build # output to build directory
