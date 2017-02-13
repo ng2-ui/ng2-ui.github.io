@@ -10,7 +10,8 @@
     "clean": "rimraf js/* index.html",
     "build": "npm-run-all --serial clean build:app",
     "build:app": "NODE_ENV=prod webpack",
-    "upgrade": "npm-check-updates --upgradeAll --reject typescript"
+    "upgrade": "npm-check-updates --upgradeAll --reject typescript",
+    "gh-pages": "git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",

@@ -15,7 +15,7 @@ const config = {
     'app': './app/main.ts' // our angular app
   },
   output: {
-    path: `docs/`,
+    path: `dist/`,
     filename: 'js/[name].js',
     chunkFilename: '[id].chunk.js'
   },
