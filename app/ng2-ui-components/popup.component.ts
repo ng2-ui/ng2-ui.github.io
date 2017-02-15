@@ -1,6 +1,81 @@
 import {Component, ViewChild} from '@angular/core';
 import { Ng2PopupComponent, Ng2MessagePopupComponent } from 'ng2-ui';
 
+let code: any = {title:[], html: [], js: [], css: []};
+code.title[0] = "Popup 1";
+code.html[0] = `
+  <ng2-popup #popup></ng2-popup>
+  <br/>
+  {{message}}
+  <br/>
+  
+  <button (click)="openPopup('small', 'Hello Small Popup')">open small message popup</button>
+  <br/>
+  <button (click)="openPopup('medium', 'Hello Medium Popup')">open medium message popup</button>
+  <br/>
+`;
+code.js[0] = `
+  import { Component, ViewChild } from '@angular/core';
+  import { Ng2PopupComponent, Ng2MessagePopupComponent } from 'ng2-ui';
+
+  export class popupComponent {
+    @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
+    message: string;
+
+    openPopup(size, title) {
+      this.popup.open(Ng2MessagePopupComponent, {
+        classNames: size,
+        title: title,
+        message: "This is message given using popup.open()",
+        buttons: {
+          OK: () => {
+            this.message = "Ok button is pressed";
+          },
+          CANCEL: () => {
+            this.message = "Cancel button is pressed";
+            this.popup.close();
+          }
+        }
+      });
+    }
+  }
+`;
+
+code.title[1] = "Custom Popup";
+code.html[1] = `
+  <div class="spacer"></div>
+  <button (click)="openCustomPopup()">open custom popup</button>
+  <br/>
+  <div class="spacer"></div>
+`;
+code.js[1] = `
+  import {Component, ViewChild} from '@angular/core';
+  import { Ng2PopupComponent } from 'ng2-ui';
+
+  @Component({
+    template: \`
+    &lt;p>This is custom popup&lt;/p>
+    {{number}} &lt;button (click)="number = number+1">increase number&lt;/button>&lt;br/>
+    &lt;button (click)="popup.close()">close&lt;/button>
+    \`
+  })
+  class CustomPopupComponent {
+    number: number = 0;
+  }
+
+  export class popupComponent {
+    @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
+    message: string;
+
+    openCustomPopup() {
+      this.popup.open(CustomPopupComponent, {
+        classNames: 'custom',
+        closeButton: false
+      });
+    }
+  }
+`;
+
 @Component({
   template: `
     <p>This is custom popup</p>
@@ -18,110 +93,52 @@ class CustomPopupComponent {
     </div>
     <div class="container">
     
-      <ng2-popup #popup></ng2-popup>
-      <br/>
-      {{message}}
-      <br/>
+      <h2> {{code.title[0]}} </h2>
+      <div class="spacer x3"></div>
+      <div class="container round-border">
+        <p>${code.html[0]}
+        <ng2-tab>
+          <div class="tabs">
+             <div index="html">HTML</div>
+             <div index="js">Javascript</div>
+           </div> 
+           <div class="tab-contents">
+             <div contents="html">
+               <pre><code>{{code.html[0]}}</code></pre>
+             </div>
+             <div contents="js">
+               <pre><code>{{code.js[0]}}</code></pre>
+             </div>
+           </div>
+        </ng2-tab>
+      </div>
+      <div class="spacer x4"></div>
       
-      <button (click)="openPopup('small', 'Hello Small Popup')">open small message popup</button>
-      <br/>
-      <button (click)="openPopup('medium', 'Hello Medium Popup')">open medium message popup</button>
-      <br/>
-      <div class="spacer"></div>
-      <ng2-tab>
-        <div class="tabs">
-           <div index="html">HTML</div>
-           <div index="js">Javascript</div>
-         </div> 
-         <div class="tab-contents">
-           <div contents="html">
-<pre><code class="language-markup"
->&lt;button (click)="openPopup('small', 'Hello Small Popup')">open small message popup&lt;/button>
-&lt;br/>
-&lt;button (click)="openPopup('medium', 'Hello Medium Popup')">open medium message popup&lt;/button>
-&lt;br/>
-&lt;ng2-popup #popup>&lt;/ng2-popup></code></pre>
-          </div>
-          <div contents="js">
-<pre><code class="language-javascript"
->import {{ '{' }}Component, ViewChild{{ '}' }} from '@angular/core';
-import {{ '{' }} Ng2PopupComponent, Ng2MessagePopupComponent {{ '}' }} from 'ng2-ui';
-
-export class popupcomponent {{ '{' }}
-  @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
-  message: string;
-
-  openPopup(size, title) {{ '{' }}
-    this.popup.open(Ng2MessagePopupComponent, {{ '{' }}
-      classNames: size,
-      title: title,
-      message: "This is message given using popup.open()",
-      buttons: {{ '{' }}
-        OK: () => {{ '{' }}
-          this.message = "Ok button is pressed";
-        {{ '}' }},
-        CANCEL: () => {{ '{' }}
-          this.message = "Cancel button is pressed";
-          this.popup.close();
-        {{ '}' }}
-      {{ '}' }}
-    {{ '}' }});
-  {{ '}' }}
-{{ '}' }}</code></pre>
-          </div>
-         </div>
-      </ng2-tab>
-      
-      <div class="spacer"></div>
-      <button (click)="openCustomPopup()">open custom popup</button>
-      <br/>
-      <div class="spacer"></div>
-      <ng2-tab>
-        <div class="tabs">
-           <div index="html">HTML</div>
-           <div index="js">Javascript</div>
-         </div> 
-         <div class="tab-contents">
-           <div contents="html">
-<pre><code class="language-markup"
->&lt;button (click)="openCustomPopup()">open custom popup&lt;/button>
-&lt;br/>
-&lt;ng2-popup #popup>&lt;/ng2-popup></code></pre>
-          </div>
-          <div contents="js">
-<pre><code class="language-javascript"
->import {{ '{' }}Component, ViewChild{{ '}' }} from '@angular/core';
-import {{ '{' }} Ng2PopupComponent {{ '}' }} from 'ng2-ui';
-
-@Component({{ '{' }}
-  template: \`
-  &lt;p>This is custom popup&lt;/p>
-  {{ '{' }}{{ '{' }}number{{ '}' }}{{ '}' }} &lt;button (click)="number = number+1">increase number&lt;/button>&lt;br/>
-  &lt;button (click)="popup.close()">close&lt;/button>
-  \`
-{{ '}' }})
-class CustomPopupComponent {{ '{' }}
-  number: number = 0;
-{{ '}' }}
-
-export class popupcomponent {{ '{' }}
-  @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
-  message: string;
-
-  openCustomPopup() {{ '{' }}
-    this.popup.open(CustomPopupComponent, {{ '{' }}
-      classNames: 'custom',
-      closeButton: false
-    {{ '}' }});
-  {{ '}' }}
-{{ '}' }}</code></pre>
-          </div>
-         </div>
-      </ng2-tab>
-      
+      <h2> {{code.title[1]}} </h2>
+      <div class="spacer x3"></div>
+      <div class="container round-border">
+        <p>${code.html[1]}
+        <ng2-tab>
+          <div class="tabs">
+             <div index="html">HTML</div>
+             <div index="js">Javascript</div>
+           </div> 
+           <div class="tab-contents">
+             <div contents="html">
+               <pre><code>{{code.html[1]}}</code></pre>
+             </div>
+             <div contents="js">
+               <pre><code>{{code.js[1]}}</code></pre>
+             </div>
+           </div>
+        </ng2-tab>
+      </div>
+      <div class="spacer x4"></div>
     </div>`
 })
 export class PopupComponent {
+  code: any = code;
+
   @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
   message: string;
 

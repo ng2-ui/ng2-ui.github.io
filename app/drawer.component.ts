@@ -17,6 +17,7 @@ import {Component} from "@angular/core";
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/tooltip">Tooltip</a>
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/menu">Menu</a>
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/parallax">Parallax Scroll</a>
+          <li class="menu-item" routerLinkActive="selected"><a routerLink="/overlay">Overlay</a>
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/popup">Popup</a>
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/scrollable">Scrollable</a>
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/sortable">Sortable</a>

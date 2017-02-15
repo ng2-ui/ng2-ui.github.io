@@ -1,6 +1,31 @@
 import { Component } from '@angular/core';
 import { Ng2OverlayManager } from 'ng2-ui';
 
+let code: any = {title:[], html: [], js: [], css: []};
+code.title[0] = "Window Overlay - Modal";
+code.html[0] =`
+  <div id="window-loading" ng2-overlay-of="window">
+    <div style="color:#fff">Loading</div>
+    <button (click)="overlayManager.close('window-loading')">Close</button>
+  </div>
+  <button (click)="overlayManager.open('window-loading')">Show Loading For Window</button>
+`;
+code.js[0] =`
+  import { Component } from '@angular/core';
+
+  @Component({
+    templateUr: 'app.html',
+    styleUrls: ['app.css']
+  })
+  export class OverlayComponent{
+    constructor(public overlayManager: Ng2OverlayManager) {}
+
+    ngAfterViewInit(): void {
+      window.scroll(0,0);
+    }
+  }
+`;
+
 @Component({
   template: `
     <div class="container page-title">
@@ -13,23 +38,39 @@ import { Ng2OverlayManager } from 'ng2-ui';
       </p>
       
       For example
-      <ol>
+      <ul>
         <li>Loading Sign</li>
         <li>Tooltip</li>
         <li>Hover Effect</li>
         <li>Etc</li>
-      </ol>
+      </ul>
       
-      <h2>Window Overlay - Modal</h2>
-      <div id="window-loading" ng2-overlay-of="window">
-        <div style="color:#fff">Loading</div>
-        <button (click)="overlayManager.close('window-loading')">Close</button>
+      <h2> {{code.title[0]}} </h2>
+      <div class="spacer x3"></div>
+      <div class="container round-border">
+        <p>${code.html[0]}
+        <ng2-tab>
+          <div class="tabs">
+             <div index="html">HTML</div>
+             <div index="js">Javascript</div>
+           </div> 
+           <div class="tab-contents">
+             <div contents="html">
+               <pre><code>{{code.html[0]}}</code></pre>
+             </div>
+             <div contents="js">
+               <pre><code>{{code.js[0]}}</code></pre>
+             </div>
+           </div>
+        </ng2-tab>
       </div>
-      <button (click)="overlayManager.open('window-loading')">Show Loading For Window</button>
+      <div class="spacer x4"></div>
       
-    </div>`
+    </div>`,
+  styles: [`li {list-style-position: inside}`]
 })
 export class OverlayComponent{
+  code: any = code;
   constructor(public overlayManager: Ng2OverlayManager) {}
 
   ngAfterViewInit(): void {

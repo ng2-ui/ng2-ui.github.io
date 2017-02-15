@@ -1,4 +1,11 @@
-ul.horizontal-menu,
+.horizontal-menu li,
+.right-side-menu li,
+.dropdown-menu li,
+.bottom-menu li {
+  z-index: 100;
+}
+
+.horizontal-menu,
 .right-side-menu,
 .has-ng2-menu ul[ng2-menu]
 {

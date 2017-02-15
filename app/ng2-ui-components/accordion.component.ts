@@ -1,24 +1,37 @@
 import { Component } from '@angular/core';
 
+let code: any = {};
+code.html= `
+  <div ng2-collapsable
+    selected="js"
+    selected-index-class="selected"
+    selected-contents-class="selected">
+    <div index="html">HTML</div>
+    <div contents="html">HTML {{foo}}</div>
+    
+    <div index="js">Javascript</div>
+    <div contents="js">Javascript {{bar}}</div>
+    
+    <div index="css">Css</div>
+    <div contents="css">Style Sheet</div>
+  </div>`;
+code.js = `
+  import { Component } from '@angular/core';
+
+  @Component({
+    templateUr: 'app.html'
+  })
+  export class AppComponent {
+    foo: any = 'foo';
+    bar: any = 'bar';
+  }`;
 @Component({
   template: `
     <div class="container page-title">
       <h1>Accordion</h1>
     </div>
     <div class="container">
-      <div ng2-collapsable
-        selected="js"
-        selected-index-class="selected"
-        selected-contents-class="selected">
-        <div index="html">HTML</div>
-        <div contents="html">HTML {{foo}}</div>
-        
-        <div index="js">Javascript</div>
-        <div contents="js">Javascript {{bar}}</div>
-        
-        <div index="css">Css</div>
-        <div contents="css">Style Sheet</div>
-      </div>
+      ${code.html}
       <div class="spacer x2"></div>
       <div ng2-tab> 
         <div class="tabs">
@@ -27,32 +40,10 @@ import { Component } from '@angular/core';
         </div>
         <div class="tab-contents">
           <div contents="html">
-<pre><code class="language-markup"
->&lt;div ng2-collapsable
-  selected="js"
-  selected-index-class="selected"
-  selected-contents-class="selected">
-  &lt;div index="html">HTML&lt;/div>
-  &lt;div contents="html">HTML {{ '{{' }}foo&125;&125;&lt;/div>
-  
-  &lt;div index="js">Javascript&lt;/div>
-  &lt;div contents="js">Javascript {{ '{{' }}bar&125;&125;&lt;/div>
-  
-  &lt;div index="css">Css&lt;/div>
-  &lt;div contents="css">Style Sheet&lt;/div>
-&lt;/div></code></pre>
+            <pre>{{code.html | htmlCode}}</pre>
           </div>
           <div contents="js">
-<pre><code class="language-javascript"
->import &123; Component &125; from '@angular/core';
-
-@Component(&123;
-  templateUr: 'app.html'
-&125;)
-export class AppComponent &123;
-  foo: any = 'foo';
-  bar: any = 'bar';
-&125;</code></pre>
+            <pre>{{code.js | htmlCode }}</pre>
           </div>
         </div>
       </div>
@@ -61,6 +52,7 @@ export class AppComponent &123;
 export class AccordionComponent {
   foo: any = 'foo';
   bar: any = 'bar';
+  code: string = code;
 
   ngAfterViewInit(): void {
     window.scroll(0,0);
