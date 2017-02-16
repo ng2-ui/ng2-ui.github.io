@@ -204,3 +204,10 @@ ng2-popup .popup-container.custom {
   border: 1px solid #999;
   border-radius: 2px;
 }
+.contributor .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 64px;
+}
