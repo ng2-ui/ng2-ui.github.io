@@ -98,7 +98,7 @@ code.js[3] =`
       <h2> {{code.title[0]}} </h2>
       <div class="spacer x3"></div>
       <div class="container round-border">
-        <!--<p>${code.html[0]}-->
+        <p>${code.html[0]}
         <ng2-tab>
           <div class="tabs">
              <div index="html">HTML</div>
@@ -119,7 +119,7 @@ code.js[3] =`
       <h2> {{code.title[1]}} </h2>
       <div class="spacer x3"></div>
       <div class="container round-border">
-        <!--<p>${code.html[1]}-->
+        <p>${code.html[1]}
         <ng2-tab>
           <div class="tabs">
              <div index="html">HTML</div>
@@ -140,7 +140,7 @@ code.js[3] =`
       <h2> {{code.title[2]}} </h2>
       <div class="spacer x3"></div>
       <div class="container round-border">
-        <!--<p>${code.html[2]}-->
+        <p>${code.html[2]}
         <ng2-tab>
           <div class="tabs">
              <div index="html">HTML</div>
