@@ -1,7 +1,7 @@
 {
   "name": "ng2-ui.github.io",
   "version": "0.6.1",
-  "description": "Ng2 UI Web Page",
+  "description": "NgUI Web Page",
   "main": "index.html",
   "scripts": {
     "start": "npm-run-all clean dev-server",
@@ -34,6 +34,7 @@
     "@angular/platform-browser-dynamic": "^2.3.0",
     "@angular/router": "^3.3.0",
     "@angular/upgrade": "2.3.0",
+    "@ngui/ngui": "^0.15.2",
     "@types/googlemaps": "^3.25.38",
     "@types/hammerjs": "^2.0.33",
     "@types/node": "^6.0.38",
@@ -50,7 +51,6 @@
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.24.1",
     "json-loader": "^0.5.4",
-    "ng2-ui": "^0.13.4",
     "node-sass": "^4.0.0",
     "npm-check-updates": "^2.8.8",
     "npm-run-all": "^3.1.2",

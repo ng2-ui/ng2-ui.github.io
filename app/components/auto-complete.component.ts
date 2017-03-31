@@ -3,7 +3,7 @@ let code: any = {title: [], html: [], js: []};
 
 code.title[0] = "Simple Array Of String"
 code.html[0]= `
-  <input ng2-auto-complete
+  <input ngui-auto-complete
     [(ngModel)]="model1"
     [source]="arrayOfStrings"
     placeholder="enter text"/>
@@ -21,7 +21,7 @@ code.js[0] = `
 
 code.title[0] = "Simple Array Of Object(id/value)"
 code.html[1] = `
-  <input ng2-auto-complete
+  <input ngui-auto-complete
     [(ngModel)]="model2"
     [source]="arrayOfKeyValues" 
     placeholder="enter text"/> 
@@ -42,7 +42,7 @@ code.js[1] = `
 
 code.title[0] = "Simple Array Of Object(key/name)"
 code.html[2] = `
-  <input ng2-auto-complete 
+  <input ngui-auto-complete 
     [source]="arrayOfKeyValues2"
     [(ngModel)]="model3"
     placeholder="enter text"
@@ -63,7 +63,7 @@ code.js[2] = `
 
 code.title[0] = "Remote Source"
 code.html[3] = `
-  <input ng2-auto-complete
+  <input ngui-auto-complete
     [(ngModel)]="model4"
     placeholder="Enter Address(min. 2 chars)"
     [source]="googleGeoCode" 
@@ -96,7 +96,7 @@ code.js[3] = `
       <div class="container round-border">
         <div class="title">Simple string of array as source</div>
         <p>${code.html[0]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -109,14 +109,14 @@ code.js[3] = `
                <pre><code>{{code.js[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       
       <div class="container round-border">
         <div class="title">{{code.title[1]}}</div>
         <p>${code.html[1]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -129,14 +129,14 @@ code.js[3] = `
                <pre><code>{{code.js[1]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       
       <div class="container round-border">
         <div class="title">{{code.title[2]}}</div>
         <p>${code.html[2]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -149,7 +149,7 @@ code.js[3] = `
                <pre><code>{{code.js[2]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
         
       <h2> Autocomplete From Remote Source </h2>
@@ -158,7 +158,7 @@ code.js[3] = `
       <div class="container round-border">
         <div class="title">{{code.title[3]}}</div>
         <p>${code.html[3]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -171,7 +171,7 @@ code.js[3] = `
                <pre><code>{{code.js[3]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       <div class="spacer x4"></div>

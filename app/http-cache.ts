@@ -1,13 +1,13 @@
 import {Injectable} from "@angular/core";
 import {Observable} from "rxjs/Rx";
 import {Http} from "@angular/http";
-import {Ng2Storage} from "./ng2-storage";
+import {Storage} from "@ngui/ngui";
 
 @Injectable()
 export class HttpCache {
   constructor(
     private http: Http,
-    private storage: Ng2Storage
+    private storage: Storage
   ) {}
 
   get(url: string): Observable<any> {

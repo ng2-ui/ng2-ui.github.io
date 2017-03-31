@@ -23,7 +23,7 @@ import {Component} from "@angular/core";
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/sortable">Sortable</a>
           <li class="menu-item" routerLinkActive="selected"><a routerLink="/sticky">Sticky Section</a>
         </ul>
-      <li class="menu-item"><a href="https://github.com/ng2-ui/ng2-ui/issues">Help</a>
+      <li class="menu-item"><a href="https://github.com/ng2-ui/ngui/issues">Help</a>
     </ul>
   `
 })

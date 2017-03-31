@@ -6,7 +6,7 @@ code.html[0] =`
   <div>
     <ul class="horizontal-menu">
       <li> Item 1
-        <ul ng2-menu="bottom">
+        <ul ngui-menu="bottom">
           <li> Menu Item 1-1 </li>
           <li> Menu Item 1-2 </li>
           <li> Menu Item 1-3 </li>
@@ -14,10 +14,10 @@ code.html[0] =`
       </li>
       
       <li> Item 2
-        <ul ng2-menu="bottom">
+        <ul ngui-menu="bottom">
           <li> Menu Item 2-1 </li>
           <li> Item 2-2 
-            <ul ng2-menu="right">
+            <ul ngui-menu="right">
               <li> Menu Item 2-2-1 </li> 
               <li> Menu Item 2-2-2 </li>
               <li> Menu Item 2-2-3 </li>
@@ -41,7 +41,7 @@ code.js[0] =`
   }
 `;
 code.css[0] = `ul.horizontal-menu,
-  .has-ng2-menu ul[ng2-menu]
+  .has-ngui-menu ul[ngui-menu]
   {
     background: #3db2e1;
     background: -moz-linear-gradient(top, #69c4e8, #21a1d4);
@@ -72,11 +72,11 @@ code.css[0] = `ul.horizontal-menu,
     transition: color .2s ease;
   }
   ul.horizontal-menu > li:hover,
-  .has-ng2-menu li:hover {
+  .has-ngui-menu li:hover {
     color: #ccc;
   }
   ul.horizontal-menu > li:hover ul,
-  .has-ng2-menu li:hover ul {
+  .has-ngui-menu li:hover ul {
     color: #fff;
   }
   .dropdown-menu, .right-side-menu, .bottom-menu {
@@ -87,10 +87,10 @@ code.css[0] = `ul.horizontal-menu,
   ul.bottom-menu li {
     z-index: 100;
   
-  .has-ng2-menu.active {
+  .has-ngui-menu.active {
     color: #fff;
   }
-  .has-ng2-menu::after {
+  .has-ngui-menu::after {
     content: '\25bc';
     display: inline-block;
     padding: 6px 12px;
@@ -99,21 +99,21 @@ code.css[0] = `ul.horizontal-menu,
     font-size: 8px;
     line-height: 13px;
   }
-  .has-ng2-menu.active::after {
+  .has-ngui-menu.active::after {
     color: #333;
   }
 
-  .has-ng2-menu ul[ng2-menu] {
+  .has-ngui-menu ul[ngui-menu] {
     background-color: #fff;
     display: none;
     list-style: none;
     margin: 0;
     padding: 0
   }
-  .has-ng2-menu.active > ul[ng2-menu] {
+  .has-ngui-menu.active > ul[ngui-menu] {
     display: inline-block;
   }
-  .has-ng2-menu > ul[ng2-menu] > li {
+  .has-ngui-menu > ul[ngui-menu] > li {
     display: block;
     margin: 0;
     padding: 10px;
@@ -125,18 +125,18 @@ code.title[1] = "Right-Side Menu";
 code.html[1] =`
   <div class="right-side-menu">
     Menu
-    <ul ng2-menu="right">
+    <ul ngui-menu="right">
       <li> Menu Item 1 
-        <ul ng2-menu="right">
+        <ul ngui-menu="right">
           <li> Menu Item 1-1
           <li> Menu Item 1-2 
           <li> Menu Item 1-3
         </ul>
       <li> Menu Item 2
-        <ul ng2-menu="right">
+        <ul ngui-menu="right">
           <li> Menu Item 2-1 &nbsp; &nbsp; &nbsp;
           <li> Menu Item 2-2 
-            <ul ng2-menu="right">
+            <ul ngui-menu="right">
               <li> Menu Item 2-2-1 
               <li> Menu Item 2-2-2 
               <li> Menu Item 2-2-3 
@@ -165,19 +165,19 @@ code.html[2] =`
   <div class="bottom-menu">
     <ul class="horizontal-menu">
       <li> Menu Item 1
-        <ul ng2-menu="top">
+        <ul ngui-menu="top">
           <li> Menu Item 1-1
           <li> Menu Item 1-2 
           <li> Menu Item 1-3
         </ul>
       <li> Menu Item 2
-        <ul ng2-menu="top">
+        <ul ngui-menu="top">
           <li> Menu Item 2-1 
           <li> Menu Item 2-2
           <li> Menu Item 2-3
         </ul>
       <li> Menu Item 3
-        <ul ng2-menu="top">
+        <ul ngui-menu="top">
           <li> Menu Item 3-1
           <li> Menu Item 3-2
           <li> Menu Item 3-3
@@ -206,7 +206,7 @@ code.js[2] =`
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[0]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -223,7 +223,7 @@ code.js[2] =`
                <pre><code>{{code.css[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       
@@ -231,7 +231,7 @@ code.js[2] =`
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[1]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -248,7 +248,7 @@ code.js[2] =`
                <pre><code>{{code.css[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       
@@ -257,7 +257,7 @@ code.js[2] =`
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[2]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -274,7 +274,7 @@ code.js[2] =`
                <pre><code>{{code.css[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
     </div>`

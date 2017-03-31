@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 let code: any = {title:[], html: [], js: [], css: []};
 code.title[0] = "Tooltip Example";
 code.html[0] = `
-  <div ng2-tooltip="This is my tooltip">
+  <div ngui-tooltip="This is my tooltip">
     tooltip 1
-    <div ng2-tooltip="this is also tootip">
+    <div ngui-tooltip="this is also tootip">
       tooltip 2 
-      <div ng2-tooltip="this is too tootip">
+      <div ngui-tooltip="this is too tootip">
         tooltip 3
       </div>
     </div>
@@ -23,15 +23,15 @@ code.js[0] = `
   }
 `;
 code.css[0] = `
-  [ng2-tooltip] {margin: 40px; border: 1px solid #ccc }
+  [ngui-tooltip] {margin: 40px; border: 1px solid #ccc }
 
-  [ng2-tooltip] .tooltip-contents {
+  [ngui-tooltip] .tooltip-contents {
     border: 1px solid #ccc; padding: 5px
   }
-  [ng2-tooltip] .tooltip-down-arrow {
+  [ngui-tooltip] .tooltip-down-arrow {
     height: 10px;
   }
-  [ng2-tooltip] .tooltip-down-arrow:before {
+  [ngui-tooltip] .tooltip-down-arrow:before {
     content: '';
     display: block;
     position: absolute;
@@ -57,7 +57,7 @@ code.css[0] = `
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[0]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -70,7 +70,7 @@ code.css[0] = `
                <pre><code>{{code.js[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       

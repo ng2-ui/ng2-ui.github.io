@@ -119,20 +119,21 @@ export class RepoInfoComponent {
 
   getCurrentRepoUrl() {
     switch(this.currentUrl) {
-      case '/auto-complete':   return 'https://api.github.com/repos/ng2-ui/ng2-auto-complete';
-      case '/datetime-picker': return 'https://api.github.com/repos/ng2-ui/ng2-datetime-picker';
-      case '/google-map':      return 'https://api.github.com/repos/ng2-ui/ng2-map';
-      case '/infinite-list':   return 'https://api.github.com/repos/ng2-ui/ng2-infinite-list';
-      case '/tab':             return 'https://api.github.com/repos/ng2-ui/ng2-tab';
-      case '/accordion':       return 'https://api.github.com/repos/ng2-ui/ng2-collapsable';
-      case '/tooltip':         return 'https://api.github.com/repos/ng2-ui/ng2-tooltip-overlay';
-      case '/menu':            return 'https://api.github.com/repos/ng2-ui/ng2-menu';
-      case '/parallax':        return 'https://api.github.com/repos/ng2-ui/ng2-parallax-scroll';
-      case '/popup':           return 'https://api.github.com/repos/ng2-ui/ng2-popup';
-      case '/scrollable':      return 'https://api.github.com/repos/ng2-ui/ng2-scrollable';
-      case '/sortable':        return 'https://api.github.com/repos/ng2-ui/ng2-ui-sortable';
-      case '/sticky':          return 'https://api.github.com/repos/ng2-ui/ng2-sticky';
-      default: return 'https://api.github.com/repos/ng2-ui/ng2-ui';
+      case '/auto-complete':   return 'https://api.github.com/repos/ng2-ui/auto-complete';
+      case '/datetime-picker': return 'https://api.github.com/repos/ng2-ui/datetime-picker';
+      case '/google-map':      return 'https://api.github.com/repos/ng2-ui/map';
+      case '/infinite-list':   return 'https://api.github.com/repos/ng2-ui/infinite-list';
+      case '/tab':             return 'https://api.github.com/repos/ng2-ui/tab';
+      case '/accordion':       return 'https://api.github.com/repos/ng2-ui/collapsable';
+      case '/tooltip':         return 'https://api.github.com/repos/ng2-ui/tooltip';
+      case '/menu':            return 'https://api.github.com/repos/ng2-ui/menu';
+      case '/parallax':        return 'https://api.github.com/repos/ng2-ui/parallax-scroll';
+      case '/popup':           return 'https://api.github.com/repos/ng2-ui/popup';
+      case '/scrollable':      return 'https://api.github.com/repos/ng2-ui/scrollable';
+      case '/sortable':        return 'https://api.github.com/repos/ng2-ui/sortable';
+      case '/sticky':          return 'https://api.github.com/repos/ng2-ui/sticky';
+      case '/react':           return 'https://api.github.com/repos/ng2-ui/react';
+      default: return 'https://api.github.com/repos/ng2-ui/ngui';
     }
   }
 }

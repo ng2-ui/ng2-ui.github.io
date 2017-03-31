@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router, NavigationEnd }  from '@angular/router';
-import { Ng2MapComponent } from "ng2-ui";
+import { NguiMapComponent } from "@ngui/ngui";
 
 @Component({
   selector: 'my-app',
@@ -14,7 +14,7 @@ export class AppComponent {
     private router: Router,
     private location: Location
   ) {
-    Ng2MapComponent['apiUrl'] = "https://maps.google.com/maps/api/js?key=AIzaSyCbMGRUwcqKjlYX4h4-P6t-xcDryRYLmCM";
+    NguiMapComponent['apiUrl'] = "https://maps.google.com/maps/api/js?key=AIzaSyCbMGRUwcqKjlYX4h4-P6t-xcDryRYLmCM";
     router.events.subscribe( event => {
       this.sendToGoogleAnalytics(event)
     });

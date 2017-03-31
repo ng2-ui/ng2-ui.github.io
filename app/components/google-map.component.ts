@@ -3,9 +3,9 @@ import { Component } from '@angular/core';
 let code: any = {title:[], html: [], js: []};
 code.title[0] = "Map With Dynamic Markers";
 code.html[0] =`
-  <ng2-map zoom="13" center="Brampton, Canada" scrollwheel="false">
+  <ngui-map zoom="13" center="Brampton, Canada" scrollwheel="false">
     <marker *ngFor="let pos of positions" [position]="pos"></marker>
-  </ng2-map>
+  </ngui-map>
 `;
 code.js[0] =`
   import { Component } from '@angular/core';
@@ -31,8 +31,8 @@ code.js[0] =`
 
 code.title[1] = "Simple Map";
 code.html[1] =`
-  <ng2-map center="Brampton, Canada" scrollwheel="false">
-  </ng2-map>
+  <ngui-map center="Brampton, Canada" scrollwheel="false">
+  </ngui-map>
 `;
 code.js[1] =`
   import { Component } from '@angular/core';
@@ -45,10 +45,10 @@ code.js[1] =`
 
 code.title[2] = "Simple Marker";
 code.html[2] =`
-  <ng2-map center="Brampton, Canada" >
+  <ngui-map center="Brampton, Canada" >
     <marker position="Brampton, Canada"
       draggable="true"></marker>
-  </ng2-map>
+  </ngui-map>
 `;
 code.js[2] =`
   import { Component } from '@angular/core';
@@ -61,7 +61,7 @@ code.js[2] =`
 
 code.title[3] = "Simple InfoWindow";
 code.html[3] =`
-  <ng2-map center="Brampton, Canada">
+  <ngui-map center="Brampton, Canada">
     <marker position="Brampton, Canada" 
       draggable="true" 
       (click)="clicked($event)">
@@ -69,7 +69,7 @@ code.html[3] =`
     <info-window id="iw">
       lat: [[lat]], lng: [[lng]]
     </info-window>
-  </ng2-map>
+  </ngui-map>
 `;
 code.js[3] =`
   import { Component } from '@angular/core';
@@ -99,7 +99,7 @@ code.js[3] =`
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[0]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -112,7 +112,7 @@ code.js[3] =`
                <pre><code>{{code.js[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
      
@@ -120,7 +120,7 @@ code.js[3] =`
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[1]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -133,7 +133,7 @@ code.js[3] =`
                <pre><code>{{code.js[1]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
      
@@ -141,7 +141,7 @@ code.js[3] =`
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[2]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -154,7 +154,7 @@ code.js[3] =`
                <pre><code>{{code.js[2]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
      
@@ -162,7 +162,7 @@ code.js[3] =`
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[3]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -175,7 +175,7 @@ code.js[3] =`
                <pre><code>{{code.js[3]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
     </div>`

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 let code: any = {title:[], html: [], js: [], css: []};
 code.title[0] = "Drag and Drop Elements To Re-order";
 code.html[0] = `
-  <ul ng2-sortable>
+  <ul ngui-sortable>
     <li id="order">Order</li>
     <li id="me">Me</li>
     <li id="right">Right</li>
@@ -23,13 +23,13 @@ code.js[0] = `
   }
 `;
 code.css[0] = `
-  ul[ng2-sortable] }
+  ul[ngui-sortable] }
      padding: 10px; 
      border: 1px solid #ccc;
     list-style: none; 
     display: block
   }
-  ul[ng2-sortable] li {
+  ul[ngui-sortable] li {
     padding: 10px 5px;
     background: #4986e7;
     color: #fff; 
@@ -37,7 +37,7 @@ code.css[0] = `
     display: block; 
     position: relative
   }
-  ul[ng2-sortable] li.drag-enter {
+  ul[ngui-sortable] li.drag-enter {
     border-top: 2px solid yellow;
   }
 `;
@@ -52,7 +52,7 @@ code.css[0] = `
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[0]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -69,18 +69,18 @@ code.css[0] = `
                <pre><code>{{code.css[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
     </div>`,
   styles: [`
-    ul[ng2-sortable] {
+    ul[ngui-sortable] {
        padding: 10px; 
        border: 1px solid #ccc;
       list-style: none; 
       display: block
     }
-    ul[ng2-sortable] li {
+    ul[ngui-sortable] li {
       padding: 10px 5px;
       background: #4986e7;
       color: #fff; 
@@ -88,7 +88,7 @@ code.css[0] = `
       display: block; 
       position: relative
     }
-    ul[ng2-sortable] li.drag-enter {
+    ul[ngui-sortable] li.drag-enter {
       border-top: 2px solid yellow;
     }
   `]

@@ -5,7 +5,7 @@ code.title[0] = "Date/Time Both"
 code.html[0] =`
   <input
     [(ngModel)]="date1" 
-    ng2-datetime-picker />
+    ngui-datetime-picker />
   date2: {{date2}}
 `;
 code.js[0] =`
@@ -23,7 +23,7 @@ code.title[1] = "Min Date, Max Date, and Disabled Dates"
 code.html[1] =`
   <input
     [(ngModel)]="date2" 
-    ng2-datetime-picker
+    ngui-datetime-picker
     [disabled-dates]="date2DisabledDates"
     [min-date]="date2MinDate"
     [max-date]="date2MaxDate"
@@ -48,7 +48,7 @@ code.js[1] =`
 code.title[2] = "Time Only";
 code.html[2] =`
   <input [(ngModel)]="date3"
-    ng2-datetime-picker 
+    ngui-datetime-picker 
     date-format="DD-MM-YYYY hh:mm"
     time-only="true"
     minute-step="5"
@@ -72,14 +72,14 @@ code.js[2] =`
     
     <div class="container">
       <p>
-        Datetime picker converts input field into datetime selector by simply adding "ng2-datetime-picker" as an attribute.
+        Datetime picker converts input field into datetime selector by simply adding "ngui-datetime-picker" as an attribute.
       </p> 
     
       <h2> {{code.title[0]}} </h2>
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[0]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -92,7 +92,7 @@ code.js[2] =`
                <pre><code>{{code.js[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       
@@ -100,7 +100,7 @@ code.js[2] =`
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[1]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -113,7 +113,7 @@ code.js[2] =`
                <pre><code>{{code.js[1]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
         
@@ -121,7 +121,7 @@ code.js[2] =`
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[2]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -134,7 +134,7 @@ code.js[2] =`
                <pre><code>{{code.js[2]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
         

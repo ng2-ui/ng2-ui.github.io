@@ -1,7 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
-import { ComponentsRoutes }            from "./ng2-ui-components/components.route";
+import { ComponentsRoutes }            from "./components/components.route";
 import { GettingStartedComponent }     from "./getting-started.component";
 
 

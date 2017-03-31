@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Ng2ScrollableDirective } from 'ng2-ui';
+import { NguiScrollableDirective } from '@ngui/ngui';
 
 let code: any = {title:[], html: [], js: [], css: []};
 code.title[0] = "Scroll Within a Section Vertically";
@@ -12,7 +12,7 @@ code.html[0] = `
 
   scrolled to: {{id}}
   <div id="v-scrollable" class="scrollable section"
-       ng2-scrollable (elementVisible)="id = $event.id">
+       ngui-scrollable (elementVisible)="id = $event.id">
     <div id="s1">Section 1  (scroll to here)</div>
     <div id="s2">Section 2  (scroll to here)</div>
     <div id="s3">Section 3  (scroll to here)</div>
@@ -27,7 +27,7 @@ code.html[0] = `
 `;
 code.js[0] = `
   import { Component } from '@angular/core';
-  import { Ng2ScrollableDirective } from 'ng2-ui';
+  import { NguiScrollableDirective } from 'ngui-ui';
 
   @Component({
     templateUr: 'app.html'
@@ -37,7 +37,7 @@ code.js[0] = `
     hid: string = 'h1';
     wid: string = 'w1';
     scrollTo(selector: string, parentSelector: string, horizontal: boolean) {
-      Ng2ScrollableDirective.scrollTo(
+      NguiScrollableDirective.scrollTo(
         selector,       // scroll to this
         parentSelector, // scroll within (null if window scrolling)
         horizontal,     // is it horizontal scrolling
@@ -76,7 +76,7 @@ code.html[1] = `
   <div class="scrollable window"
        (elementVisible)="wid = $event.id"
        (elementHidden)="whid = $event.id"
-       ng2-scrollable>
+       ngui-scrollable>
     <div id="w1">One</div>
     <div id="w2">Two</div>
     <div id="w3">Three</div>
@@ -108,7 +108,7 @@ code.html[1] = `
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[0]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -125,7 +125,7 @@ code.html[1] = `
                <pre><code>{{code.css[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       
@@ -133,7 +133,7 @@ code.html[1] = `
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[1]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -150,7 +150,7 @@ code.html[1] = `
                <pre><code>{{code.css[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       
@@ -194,7 +194,7 @@ export class ScrollableComponent {
   hid: string = 'h1';
   wid: string = 'w1';
   scrollTo(selector: string, parentSelector: string, horizontal: boolean) {
-    Ng2ScrollableDirective.scrollTo(
+    NguiScrollableDirective.scrollTo(
       selector,       // scroll to this
       parentSelector, // scroll within (null if window scrolling)
       horizontal,     // is it horizontal scrolling

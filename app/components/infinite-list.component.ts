@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 let code: any = {title:[], html: [], js: []};
 code.title[0] = "Vertically";
 code.html[0] =`
-  <ul ng2-infinite-list  class="infinite-list"
+  <ul ngui-infinite-list  class="infinite-list"
       (endVisible)="loadMore(set1)">
     <li *ngFor="let item of set1.list">{{item+1}}</li>
-    <div ng2-infinite-list-end>
+    <div ngui-infinite-list-end>
       <div *ngIf="set1.loadingInProgress">Loading</div>
       <div *ngIf="set1.endOfList">End Of List</div>
     </div>
@@ -47,11 +47,11 @@ code.js[0] =`
 
 code.title[1] = "Horizontally";
 code.html[1] =`
-  <div ng2-infinite-list horizontal="true"
+  <div ngui-infinite-list horizontal="true"
        class="infinite-list horizontal"
        (endVisible)="loadMore(set2)">
     <div *ngFor="let item of set2.list">{{item+1}}</div>
-      <div ng2-infinite-list-end>
+      <div ngui-infinite-list-end>
       &nbsp;
       <div *ngIf="set2.loadingInProgress">Loading</div>
       <div *ngIf="set2.endOfList">End Of List</div>
@@ -102,7 +102,7 @@ code.js[1] =`
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[0]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -115,7 +115,7 @@ code.js[1] =`
                <pre><code>{{code.js[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       
@@ -123,7 +123,7 @@ code.js[1] =`
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[1]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -136,7 +136,7 @@ code.js[1] =`
                <pre><code>{{code.js[1]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       

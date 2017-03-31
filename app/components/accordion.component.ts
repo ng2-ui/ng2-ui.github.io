@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 let code: any = {};
 code.html= `
-  <div ng2-collapsable
+  <div ngui-collapsable
     selected="js"
     selected-index-class="selected"
     selected-contents-class="selected">
@@ -33,7 +33,7 @@ code.js = `
     <div class="container">
       ${code.html}
       <div class="spacer x2"></div>
-      <div ng2-tab> 
+      <div ngui-tab> 
         <div class="tabs">
           <div index="html">HTML</div>
           <div index="js">Javascript</div>

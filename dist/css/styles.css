@@ -7,7 +7,7 @@ input {
   padding: 5px;
 }
 
-ng2-tab {
+ngui-tab {
   padding: 10px 0;
   display: block;
 }
@@ -121,10 +121,10 @@ pre {
   border-bottom: 1px solid #eee;
 }
 
-ng2-popup > div {
+ngui-popup > div {
   z-index: 1;
 }
-ng2-popup .popup-container.custom {
+ngui-popup .popup-container.custom {
   padding: 12px;
   text-align: center;
 }
@@ -210,4 +210,11 @@ ng2-popup .popup-container.custom {
   -o-text-overflow: ellipsis;
   white-space: nowrap;
   width: 64px;
+}
+
+/**
+ * datetime picker
+ */
+div.ngui-datetime-picker .days {
+  width: 230px;
 }

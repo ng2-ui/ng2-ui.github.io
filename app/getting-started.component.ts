@@ -6,27 +6,21 @@ import { Component } from '@angular/core';
 </div>
 <div class="container">
   <p class="page-title-description">
-    ng2-ui is a collection of quality Angular2 directives.
-    To make ng2-ui available to your project, you need to install a npm package and 
-    import NG2_DIRECTIVES.
+    ngui is a collection of quality Angular2 directives.
+    To make ngui available to your project, you need to install a npm package "@ngui/ngui"
   </p>
   
   <h2>NPM Install</h2>
-  <pre><code class="language-bash">$ npm install ng2-ui --save</code></pre>
+  <pre><code class="language-bash">$ npm install @ngui/ngui --save</code></pre>
   
   <h2>systemjs.config.js</h2>
   <pre><code class="language-javascript">
 map: {{ '{' }}
   app: "app",
   ...
-  'ng2-ui': 'https://npmcdn.com/ng2-ui' // <----- this
+  '@ngui/ngui': 'https://npmcdn.com/ng2-ui/ngui/dist/ngui.umd.js' // <----- this
 {{ '}' }},
 
-packages: {{ '{' }}
-   app: {{ '{' }}main: './main.js', defaultExtension: 'js'{{ '}' }},
-   ...
-   'ng2-ui': {{ '{' }} main: 'dist/index.js', defaultExtension: 'js' {{ '}' }}  // <----- this
-   {{ '}' }}
 }</code></pre>
       
   <h2>Usage</h2>
@@ -46,9 +40,9 @@ export class AppComponent {{ '{' }} ... {{ '}' }}
 
 <p><b>src/app.tpl.html</b></p>
 <pre><code class="language-markup">
-&lt;input [(ngModel)]="date1" ng2-datetime-picker /> 
+&lt;input [(ngModel)]="date1" ngui-datetime-picker /> 
 
-&lt;ng2-map center="Brampton, Canada">&lt;/ng2-map> 
+&lt;ngui-map center="Brampton, Canada">&lt;/ngui-map> 
 </code></pre>
 </div>
   `

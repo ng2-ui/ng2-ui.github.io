@@ -1,10 +1,10 @@
 import {Component, ViewChild} from '@angular/core';
-import { Ng2PopupComponent, Ng2MessagePopupComponent } from 'ng2-ui';
+import { NguiPopupComponent, NguiMessagePopupComponent } from '@ngui/ngui';
 
 let code: any = {title:[], html: [], js: [], css: []};
 code.title[0] = "Popup 1";
 code.html[0] = `
-  <ng2-popup #popup></ng2-popup>
+  <ngui-popup #popup></ngui-popup>
   <br/>
   {{message}}
   <br/>
@@ -16,14 +16,14 @@ code.html[0] = `
 `;
 code.js[0] = `
   import { Component, ViewChild } from '@angular/core';
-  import { Ng2PopupComponent, Ng2MessagePopupComponent } from 'ng2-ui';
+  import { NguiPopupComponent, NguiMessagePopupComponent } from 'ngui-ui';
 
   export class popupComponent {
-    @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
+    @ViewChild(NguiPopupComponent) popup: NguiPopupComponent;
     message: string;
 
     openPopup(size, title) {
-      this.popup.open(Ng2MessagePopupComponent, {
+      this.popup.open(NguiMessagePopupComponent, {
         classNames: size,
         title: title,
         message: "This is message given using popup.open()",
@@ -50,7 +50,7 @@ code.html[1] = `
 `;
 code.js[1] = `
   import {Component, ViewChild} from '@angular/core';
-  import { Ng2PopupComponent } from 'ng2-ui';
+  import { NguiPopupComponent } from 'ngui-ui';
 
   @Component({
     template: \`
@@ -64,7 +64,7 @@ code.js[1] = `
   }
 
   export class popupComponent {
-    @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
+    @ViewChild(NguiPopupComponent) popup: NguiPopupComponent;
     message: string;
 
     openCustomPopup() {
@@ -97,7 +97,7 @@ class CustomPopupComponent {
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[0]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -110,7 +110,7 @@ class CustomPopupComponent {
                <pre><code>{{code.js[0]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
       
@@ -118,7 +118,7 @@ class CustomPopupComponent {
       <div class="spacer x3"></div>
       <div class="container round-border">
         <p>${code.html[1]}
-        <ng2-tab>
+        <ngui-tab>
           <div class="tabs">
              <div index="html">HTML</div>
              <div index="js">Javascript</div>
@@ -131,7 +131,7 @@ class CustomPopupComponent {
                <pre><code>{{code.js[1]}}</code></pre>
              </div>
            </div>
-        </ng2-tab>
+        </ngui-tab>
       </div>
       <div class="spacer x4"></div>
     </div>`
@@ -139,7 +139,7 @@ class CustomPopupComponent {
 export class PopupComponent {
   code: any = code;
 
-  @ViewChild(Ng2PopupComponent) popup: Ng2PopupComponent;
+  @ViewChild(NguiPopupComponent) popup: NguiPopupComponent;
   message: string;
 
   ngafterviewinit(): void {
@@ -147,7 +147,7 @@ export class PopupComponent {
   }
 
   openPopup(size: string, title: string) {
-    this.popup.open(Ng2MessagePopupComponent, {
+    this.popup.open(NguiMessagePopupComponent, {
       classNames: size,
       title: title,
       message: "This is message given using popup.open()",
